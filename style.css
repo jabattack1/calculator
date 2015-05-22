@@ -42,32 +42,38 @@ body {
 	background-size:454px 121px;
 	width:454px;
 	height:121px;
-	z-index:0;
 	margin-left:228px;
 	margin-top:65px;
 	border-radius: 8px;
 }
 
+@font-face {
+    font-family: 'digi'; /*a name to be used later*/
+    src: url(./images/DS-DIGIB.TTF); /*URL to font*/
+}
+
 #answer{
 	position:absolute;
-	font-family:"orbitron",Arial,sans-serif;
+	font-family:'digi';
 	background:url(./images/screen.png);
 	background-size:454px 130px;
 	font-size: 130px;
 	margin-top:0px;
 	margin-left:0px;
+	z-index:0;
 	/*text-shadow: .5px .5px .5px #FFFFFF;*/
 	direction:RTL;
 	text-align:right;
-	width:454px;
+	width:455px;
 	height:127px;
-	border-radius: 8px;
+	border-radius: 10px;
 	border: none;
 	color: transparent;
 	text-shadow: 0 0 0 black;
 	&:focus {
     	outline: none;
 	}
+
 }
 
 input[type=number]::-webkit-inner-spin-button, 

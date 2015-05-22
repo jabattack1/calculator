@@ -165,14 +165,6 @@ function zero(){
 	else {$('#answer').val(value);}
 }
 
-function c(){
-	$('#answer').val("");
-}
-
-function ac(){
-	$('#answer').val("");
-}
-
 function period(){
     var value = $('#period').val();
     var place = $('#answer').val();
@@ -185,6 +177,14 @@ function period(){
 		$('#period').disabled = true;
 	}
 	else {$('#answer').val(0 + value);
+	}
 }
 
+function c(){
+	$('#answer').val("");
 }
+
+function ac(){
+	$('#answer').val("");
+}
+
