@@ -76,12 +76,12 @@ body {
 	background-repeat:no-repeat;
 	background-color:none;
 	z-index:2;
-	margin-top:438.5px;
+	margin-top:438px;
 	margin-left:94px;
 	background-size:72px 43px;
 	width:72px;
 	height:43px;
-	border-radius:12px;
+	border-radius:11px;
 }
 
 #two {
@@ -90,10 +90,12 @@ body {
 	background-repeat:no-repeat;
 	background-color:none;
 	z-index:2;
-	margin-top:438.5px;
+	margin-top:438px;
 	margin-left:190px;
 	background-size:72px 43px;
 	width:72px;
 	height:43px;
-	border-radius:12px;
+	border-radius:11px;
 }
+
+button:focus {outline:0;}
