@@ -70,6 +70,8 @@ body {
 	}
 }
 
+button:focus {outline:0;}
+
 #one {
 	position:absolute;
 	background-image:url(./images/1.png);
@@ -91,11 +93,121 @@ body {
 	background-color:none;
 	z-index:2;
 	margin-top:438px;
-	margin-left:190px;
+	margin-left:191px;
 	background-size:72px 43px;
 	width:72px;
 	height:43px;
 	border-radius:11px;
 }
 
-button:focus {outline:0;}
+#three {
+	position:absolute;
+	background-image:url(./images/3.png);
+	background-repeat:no-repeat;
+	background-color:none;
+	z-index:2;
+	margin-top:438px;
+	margin-left:287px;
+	background-size:72px 43px;
+	width:72px;
+	height:43px;
+	border-radius:11px;
+}
+
+#four {
+	position:absolute;
+	background-image:url(./images/4.png);
+	background-repeat:no-repeat;
+	background-color:none;
+	z-index:2;
+	margin-top:374px;
+	margin-left:94px;
+	background-size:72px 43px;
+	width:72px;
+	height:43px;
+	border-radius:11px;
+}
+
+#five {
+	position:absolute;
+	background-image:url(./images/5.png);
+	background-repeat:no-repeat;
+	background-color:none;
+	z-index:2;
+	margin-top:374px;
+	margin-left:191px;
+	background-size:72px 43px;
+	width:72px;
+	height:43px;
+	border-radius:11px;
+}
+
+#six {
+	position:absolute;
+	background-image:url(./images/6.png);
+	background-repeat:no-repeat;
+	background-color:none;
+	z-index:2;
+	margin-top:374px;
+	margin-left:287px;
+	background-size:72px 43px;
+	width:72px;
+	height:43px;
+	border-radius:11px;
+}
+
+#seven {
+	position:absolute;
+	background-image:url(./images/7.png);
+	background-repeat:no-repeat;
+	background-color:none;
+	z-index:2;
+	margin-top:310px;
+	margin-left:94px;
+	background-size:72px 43px;
+	width:72px;
+	height:43px;
+	border-radius:11px;
+}
+
+#eight {
+	position:absolute;
+	background-image:url(./images/8.png);
+	background-repeat:no-repeat;
+	background-color:none;
+	z-index:2;
+	margin-top:310px;
+	margin-left:191px;
+	background-size:72px 43px;
+	width:72px;
+	height:43px;
+	border-radius:11px;
+}
+
+#nine {
+	position:absolute;
+	background-image:url(./images/9.png);
+	background-repeat:no-repeat;
+	background-color:none;
+	z-index:2;
+	margin-top:310px;
+	margin-left:287px;
+	background-size:72px 43px;
+	width:72px;
+	height:43px;
+	border-radius:11px;
+}
+
+#zero {
+	position:absolute;
+	background-image:url(./images/0.png);
+	background-repeat:no-repeat;
+	background-color:none;
+	z-index:2;
+	margin-top:502px;
+	margin-left:94px;
+	background-size:72px 43px;
+	width:72px;
+	height:43px;
+	border-radius:11px;
+}
