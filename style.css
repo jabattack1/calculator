@@ -4,8 +4,8 @@ html{
 body {
   /*background: url() no-repeat;*/
   /*background-color:black;*/
-  background:url(./images/desktop.jpg) repeat-y center top;
-  background-size: 100%;
+  background:url(./images/deskt.jpg) repeat-y center top;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 	width:900px;
   	height: 600px;
