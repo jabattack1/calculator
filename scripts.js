@@ -18,13 +18,16 @@ console.log('cool');
 //     });
 // });
 
-$('#answer').maxLength=4
+
+
+
+$('#answer').maxLength=4;
 
 function one(){
     var value = $('#one').val();
     var place = $('#answer').val();
 
-    if($('#answer').val()) {
+     if(place && place < 100000) {
     $('#answer').val(place + value);
 	}
 	else {$('#answer').val(value);}
@@ -34,7 +37,7 @@ function two(){
     var value = $('#two').val();
     var place = $('#answer').val();
 
-    if($('#answer').val()) {
+    if(place && place < 100000) {
     $('#answer').val(place + value);
 	}
 	else {$('#answer').val(value);}
