@@ -4,11 +4,11 @@ html{
 body {
   /*background: url() no-repeat;*/
   /*background-color:black;*/
-  background:url(./images/wood.jpg) repeat-y center top;
+  background:url(./images/desktop.jpg) repeat-y center top;
   background-size: 100%;
   background-repeat: no-repeat;
 	width:900px;
-  	height: 900px;
+  	height: 600px;
   	margin: 0 auto;
   position:relative;
   /*background-color:red;*/
