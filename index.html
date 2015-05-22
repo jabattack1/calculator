@@ -17,7 +17,7 @@
 <div id='page_wrap'>
 <div id='bone'>
 </div>
-<div id='textarea-wrapper'><input  type='text' id='answer' maxlength="6" onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
+<div id='textarea-wrapper'><input  onfocus="this.blur()" readonly="readonly" type='number' step="any" id='answer' maxlength="6" onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
 	<button id='one' value='1' class='numbers' onclick="one()"></button>
 	<button id='two' value='2' class='numbers' onclick="two()"></button>
 	<button id='three' value='3' class='numbers' onclick="three()"></button>
@@ -28,6 +28,9 @@
 	<button id='eight' value='8' class='numbers' onclick="eight()"></button>
 	<button id='nine' value='9' class='numbers' onclick="nine()"></button>
 	<button id='zero' value='0' class='numbers' onclick="zero()"></button>
+	<button id='c' value='' class='numbers' onclick="c()"></button>
+	<button id='ac' value='' class='numbers' onclick="ac()"></button>
+	<button id='period' value='.' class='numbers' onclick="period()"></button>
 </div>
 
 </div>

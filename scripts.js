@@ -19,9 +19,21 @@ console.log('cool');
 // });
 
 
-
+$('#answer').keydown(false);
 
 $('#answer').maxLength=4;
+
+$( document ).ready(function() {
+    console.log( "ready!" );
+});
+
+// for (i = 0; i < $('#answer').val().length; i++) { 
+// 		var loop = $('#answer').val();
+// 		debugger
+//     if(loop[i] === "."){
+//     	$('#period').disabled = true;
+// 		}
+// }
 
 function one(){
     var value = $('#one').val();
@@ -153,4 +165,26 @@ function zero(){
 	else {$('#answer').val(value);}
 }
 
+function c(){
+	$('#answer').val("");
+}
 
+function ac(){
+	$('#answer').val("");
+}
+
+function period(){
+    var value = $('#period').val();
+    var place = $('#answer').val();
+
+
+    if(place && place.toString().length < 6) {
+    $('#answer').val(place + value);
+	}
+	else if (place.toString().length > 5) {
+		$('#period').disabled = true;
+	}
+	else {$('#answer').val(0 + value);
+}
+
+}
