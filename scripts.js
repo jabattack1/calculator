@@ -44,7 +44,7 @@ function two(){
     $('#answer').val(place + value);
 	}
 	else if (place > 10000) {
-		$('#one').disabled = true;
+		$('#two').disabled = true;
 	}
 	else {$('#answer').val(value);}
 }
