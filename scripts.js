@@ -30,6 +30,9 @@ function one(){
      if(place && place < 100000) {
     $('#answer').val(place + value);
 	}
+	else if (place > 10000) {
+		$('#one').disabled = true;
+	}
 	else {$('#answer').val(value);}
 }
 
@@ -40,5 +43,9 @@ function two(){
     if(place && place < 100000) {
     $('#answer').val(place + value);
 	}
+	else if (place > 10000) {
+		$('#one').disabled = true;
+	}
 	else {$('#answer').val(value);}
 }
+
