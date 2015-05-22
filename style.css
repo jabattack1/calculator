@@ -4,7 +4,7 @@ html{
 body {
   /*background: url() no-repeat;*/
   /*background-color:black;*/
-  background:url(http://lazydrawing.com/wp-content/uploads/2014/05/wood-background-color-desk-1.jpg) repeat-y center top;
+  background:url(./images/wood.jpg) repeat-y center top;
   background-size: 100%;
   background-repeat: no-repeat;
 	width:900px;
