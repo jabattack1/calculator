@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Calculator jr.</title>
+
+	<script src="jquery.js"></script>
+  	<script src="scripts.js"></script>
+  	<link rel="stylesheet" media="all" href="style.css" />
+  	<link rel="stylesheet" media="all" href="animate.css" />
+  	<meta charset="UTF-8">
+  	<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+
+
+</head>
+
+<body>
+
+<div id='page_wrap'>
+<div id='bone'>
+</div>
+<div id='textarea-wrapper'><input  type='text' id='answer' maxlength="4" onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
+	<button id='one' value='1' class='numbers' onclick="one()"></button>
+	<button id='two' value='2' class='numbers' onclick="two()"></button>
+</div>
+
+</div>
+
+</body>
+
+</html>
