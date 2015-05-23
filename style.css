@@ -76,6 +76,7 @@ body {
 
 }
 
+
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
@@ -261,6 +262,48 @@ button { cursor: pointer; cursor: hand; }
 	z-index:2;
 	margin-top:502px;
 	margin-left:191px;
+	background-size:73px 44px;
+	width:73px;
+	height:44px;
+	border-radius:11px;
+}
+
+#add {
+	position:absolute;
+	background-image:url(./images/plus.png);
+	background-repeat:no-repeat;
+	background-color:none;
+	z-index:2;
+	margin-top:439px;
+	margin-left:385px;
+	background-size:71px 110px;
+	width:71px;
+	height:108px;
+	border-radius:11px;
+}
+
+#subtract {
+	position:absolute;
+	background-image:url(./images/subtract.png);
+	background-repeat:no-repeat;
+	background-color:none;
+	z-index:2;
+	margin-top:374px;
+	margin-left:385px;
+	background-size:73px 44px;
+	width:73px;
+	height:44px;
+	border-radius:11px;
+}
+
+#equals {
+	position:absolute;
+	background-image:url(./images/equals.png);
+	background-repeat:no-repeat;
+	background-color:none;
+	z-index:2;
+	margin-top:502px;
+	margin-left:287px;
 	background-size:73px 44px;
 	width:73px;
 	height:44px;

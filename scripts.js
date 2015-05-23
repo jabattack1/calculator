@@ -1,5 +1,7 @@
 console.log('cool');
 
+// var answer2 = "<input  onfocus=\"this.blur()\" readonly=\"readonly\" type='number' step=\"any\" id=\'answer\' maxlength=\"6\" onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>"
+
 // var answer = $('#answer').text()[0];
 
 
@@ -186,5 +188,37 @@ function c(){
 
 function ac(){
 	$('#answer').val("");
+}
+
+function add(){
+	var place = $('#answer').val();
+	sessionStorage.setItem("first", place);
+	first = sessionStorage.getItem("first");
+	operator = $('#add').val();
+	$('#answer').val("");
+}
+
+function subtract(){
+	var place = $('#answer').val();
+	sessionStorage.setItem("first", place);
+	first = sessionStorage.getItem("first");
+	operator = $('#subtract').val();
+	$('#answer').val("");
+}
+
+function equals(){
+	if(operator === '+') {
+	var place2 = $('#answer').val();
+	sessionStorage.setItem("second", place2);
+	second = sessionStorage.getItem("second");
+	$('#answer').val(parseFloat(first) + parseFloat(second));
+	}
+	else if(operator === '-') {
+	var place2 = $('#answer').val();
+	sessionStorage.setItem("second", place2);
+	second = sessionStorage.getItem("second");
+	$('#answer').val(parseFloat(first) - parseFloat(second));
+	}
+
 }
 
