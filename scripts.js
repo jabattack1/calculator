@@ -225,13 +225,16 @@ function subtract(){
 	operator = $('#subtract').val();
 	// $('#answer1').val("");
 	if(second === null) {
+		console.log('no second')
 	$('#answer').val("");}
-	else{var place2 = $('#answer').val();
+	else{
+	console.log('second')
+	debugger
+	var place2 = $('#answer').val();
 	sessionStorage.setItem("second", place2);
 	second = sessionStorage.getItem("second");
-	number = $('#answer').val(parseFloat(first) - parseFloat(second));
+	var number = $('#answer').val(parseFloat(first) - parseFloat(second));
 	}
-
 }
 
 function equals(){
