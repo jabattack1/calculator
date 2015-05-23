@@ -19,7 +19,7 @@ console.log('cool');
 //       $('#linkadd').click();
 //     });
 // });
-
+var second = null
 
 $('#answer').keydown(false);
 
@@ -48,6 +48,8 @@ function one(){
 		$('#one').disabled = true;
 	}
 	else {$('#answer').val(value);}
+
+	$('#equals').trigger('click');
 }
 
 function two(){
@@ -61,6 +63,8 @@ function two(){
 		$('#two').disabled = true;
 	}
 	else {$('#answer').val(value);}
+
+	$('#equals').trigger('click');
 }
 
 function three(){
@@ -74,6 +78,8 @@ function three(){
 		$('#three').disabled = true;
 	}
 	else {$('#answer').val(value);}
+
+	$('#equals').trigger('click');
 }
 
 function four(){
@@ -87,6 +93,8 @@ function four(){
 		$('#four').disabled = true;
 	}
 	else {$('#answer').val(value);}
+
+	$('#equals').trigger('click');
 }
 
 function five(){
@@ -100,6 +108,8 @@ function five(){
 		$('#five').disabled = true;
 	}
 	else {$('#answer').val(value);}
+
+	$('#equals').trigger('click');
 }
 
 function six(){
@@ -113,6 +123,8 @@ function six(){
 		$('#six').disabled = true;
 	}
 	else {$('#answer').val(value);}
+
+	$('#equals').trigger('click');
 }
 
 function seven(){
@@ -126,6 +138,8 @@ function seven(){
 		$('#seven').disabled = true;
 	}
 	else {$('#answer').val(value);}
+
+	$('#equals').trigger('click');
 }
 
 function eight(){
@@ -139,6 +153,8 @@ function eight(){
 		$('#eight').disabled = true;
 	}
 	else {$('#answer').val(value);}
+
+	$('#equals').trigger('click');
 }
 
 function nine(){
@@ -152,6 +168,7 @@ function nine(){
 		$('#nine').disabled = true;
 	}
 	else {$('#answer').val(value);}
+	// $('#equals').trigger('click');
 }
 
 function zero(){
@@ -165,6 +182,8 @@ function zero(){
 		$('#zero').disabled = true;
 	}
 	else {$('#answer').val(value);}
+
+	$('#equals').trigger('click');
 }
 
 function period(){
@@ -195,6 +214,7 @@ function add(){
 	sessionStorage.setItem("first", place);
 	first = sessionStorage.getItem("first");
 	operator = $('#add').val();
+	// $('#answer1').val("");
 	$('#answer').val("");
 }
 
@@ -203,7 +223,15 @@ function subtract(){
 	sessionStorage.setItem("first", place);
 	first = sessionStorage.getItem("first");
 	operator = $('#subtract').val();
-	$('#answer').val("");
+	// $('#answer1').val("");
+	if(second === null) {
+	$('#answer').val("");}
+	else{var place2 = $('#answer').val();
+	sessionStorage.setItem("second", place2);
+	second = sessionStorage.getItem("second");
+	number = $('#answer').val(parseFloat(first) - parseFloat(second));
+	}
+
 }
 
 function equals(){
@@ -211,14 +239,16 @@ function equals(){
 	var place2 = $('#answer').val();
 	sessionStorage.setItem("second", place2);
 	second = sessionStorage.getItem("second");
-	$('#answer').val(parseFloat(first) + parseFloat(second));
+	number = $('#answer').val(parseFloat(first) + parseFloat(second));
 	}
 	else if(operator === '-') {
 	var place2 = $('#answer').val();
 	sessionStorage.setItem("second", place2);
 	second = sessionStorage.getItem("second");
-	$('#answer').val(parseFloat(first) - parseFloat(second));
+	number = $('#answer').val(parseFloat(first) - parseFloat(second));
 	}
-
 }
+
+
+
 
