@@ -46,10 +46,11 @@ body {
 
 #pencil {
 	position: absolute;
-	margin-top:10px;
-	margin-left: 740px;
-	height:550px;
-	width: 340px;
+	margin-top:410px;
+	margin-left: 730px;
+	height:350px;
+	width: 260px;
+
 }
 
 #eraser {
