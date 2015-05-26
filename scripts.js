@@ -312,7 +312,7 @@ function c(){
 }
 
 function ac(){
-	ssecond = null;
+	second = null;
 	first = null;
 	$('#answer').val("");
 }
