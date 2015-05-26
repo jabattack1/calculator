@@ -18,7 +18,7 @@ body {
 #page-wrap {
   /*font-family: Georgia, serif;*/
   /*background-position: center;*/
-  background-attachment:scroll;
+  /*background-attachment:scroll;*/
   /*overflow-x: hidden;*/
   	margin: 0 auto;
      /*width: 900px;*/
@@ -62,8 +62,8 @@ body {
 
 #paper {
 	position: absolute;
-	margin-top:100%;
-	margin-left:100%;
+	margin-top:35%;
+	margin-left:71%;
 	height:360px;
 	width: 450px;
 	z-index:-1;
