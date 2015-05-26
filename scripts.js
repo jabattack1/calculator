@@ -19,9 +19,10 @@ console.log('cool');
 //       $('#linkadd').click();
 //     });
 // });
+
+
 var second = null;
 number = null
-
 $('#answer').keydown(false);
 
 $('#answer').maxLength=4;
