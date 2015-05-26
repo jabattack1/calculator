@@ -22,7 +22,10 @@ console.log('cool');
 
 
 var second = null;
+var first = null;
 number = null
+
+
 $('#answer').keydown(false);
 
 $('#answer').maxLength=4;
@@ -311,9 +314,22 @@ function ac(){
 }
 
 function add(){
+
+
+	if(first != null && number === null) {
+		console.log('second')
+		first = parseFloat(first) + parseFloat($('#answer').val());
+	}
+	else if(first != null && number != null) {
+		console.log('number')
+		first = parseFloat(number.val());
+	}
+	else{
 	var place = $('#answer').val();
 	sessionStorage.setItem("first", place);
 	first = sessionStorage.getItem("first");
+	}
+
 	operator = $('#add').val();
 	// $('#answer1').val("");
 	$('#answer').val("");
@@ -321,10 +337,21 @@ function add(){
 }
 
 function subtract(){
-	console.log('subtact')
+	
+	if(first != null && number === null) {
+		console.log('second')
+		first = parseFloat(first) - parseFloat($('#answer').val());
+	}
+	else if(first != null && number != null) {
+		console.log('number')
+		first = parseFloat(number.val());
+	}
+	else{
 	var place = $('#answer').val();
 	sessionStorage.setItem("first", place);
 	first = sessionStorage.getItem("first");
+	}
+
 	operator = $('#subtract').val();
 	// $('#answer1').val("");
 	$('#answer').val("");
