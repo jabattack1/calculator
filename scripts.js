@@ -306,10 +306,14 @@ function period(){
 }
 
 function c(){
+	second = null;
+	first = null;
 	$('#answer').val("");
 }
 
 function ac(){
+	ssecond = null;
+	first = null;
 	$('#answer').val("");
 }
 
