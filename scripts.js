@@ -19,7 +19,8 @@ console.log('cool');
 //       $('#linkadd').click();
 //     });
 // });
-var second = null
+var second = null;
+number = null
 
 $('#answer').keydown(false);
 
@@ -38,21 +39,37 @@ $( document ).ready(function() {
 // }
 
 function one(){
+
+	if (number) {
+		$('#answer').val("");
+		$('#answer').val(value);
+		number = null;
+	}
+
     var value = $('#one').val();
     var place = $('#answer').val();
 
-     if(place && place.toString().length < 6) {
-    $('#answer').val(place + value);
+    if (place && place.toString().length < 6) {
+    	$('#answer').val(place + value);
 	}
 	else if (place.toString().length > 5) {
 		$('#one').disabled = true;
 	}
 	else {$('#answer').val(value);}
 
-	$('#equals').trigger('click');
+	$('#add').removeAttr('disabled');
+	$('#subtract').removeAttr('disabled');
+	// $('#equals').trigger('click');
 }
 
 function two(){
+	
+	if (number) {
+		$('#answer').val("");
+		$('#answer').val(value);
+		number = null;
+	}
+
     var value = $('#two').val();
     var place = $('#answer').val();
 
@@ -63,11 +80,20 @@ function two(){
 		$('#two').disabled = true;
 	}
 	else {$('#answer').val(value);}
+	$('#add').removeAttr('disabled');
+	$('#subtract').removeAttr('disabled');
 
-	$('#equals').trigger('click');
+	// $('#equals').trigger('click');
 }
 
 function three(){
+	
+	if (number) {
+		$('#answer').val("");
+		$('#answer').val(value);
+		number = null;
+	}
+
     var value = $('#three').val();
     var place = $('#answer').val();
 
@@ -78,11 +104,20 @@ function three(){
 		$('#three').disabled = true;
 	}
 	else {$('#answer').val(value);}
+	$('#add').removeAttr('disabled');
+	$('#subtract').removeAttr('disabled');
 
-	$('#equals').trigger('click');
+	// $('#equals').trigger('click');
 }
 
 function four(){
+	
+	if (number) {
+		$('#answer').val("");
+		$('#answer').val(value);
+		number = null;
+	}
+
     var value = $('#four').val();
     var place = $('#answer').val();
 
@@ -93,11 +128,20 @@ function four(){
 		$('#four').disabled = true;
 	}
 	else {$('#answer').val(value);}
+	$('#add').removeAttr('disabled');
+	$('#subtract').removeAttr('disabled');
 
-	$('#equals').trigger('click');
+	// $('#equals').trigger('click');
 }
 
 function five(){
+	
+	if (number) {
+		$('#answer').val("");
+		$('#answer').val(value);
+		number = null;
+	}
+
     var value = $('#five').val();
     var place = $('#answer').val();
 
@@ -108,11 +152,20 @@ function five(){
 		$('#five').disabled = true;
 	}
 	else {$('#answer').val(value);}
+	$('#add').removeAttr('disabled');
+	$('#subtract').removeAttr('disabled');
 
-	$('#equals').trigger('click');
+	// $('#equals').trigger('click');
 }
 
 function six(){
+	
+	if (number) {
+		$('#answer').val("");
+		$('#answer').val(value);
+		number = null;
+	}
+
     var value = $('#six').val();
     var place = $('#answer').val();
 
@@ -123,11 +176,20 @@ function six(){
 		$('#six').disabled = true;
 	}
 	else {$('#answer').val(value);}
+	$('#add').removeAttr('disabled');
+	$('#subtract').removeAttr('disabled');
 
-	$('#equals').trigger('click');
+	// $('#equals').trigger('click');
 }
 
 function seven(){
+	
+	if (number) {
+		$('#answer').val("");
+		$('#answer').val(value);
+		number = null;
+	}
+
     var value = $('#seven').val();
     var place = $('#answer').val();
 
@@ -138,11 +200,20 @@ function seven(){
 		$('#seven').disabled = true;
 	}
 	else {$('#answer').val(value);}
+	$('#add').removeAttr('disabled');
+	$('#subtract').removeAttr('disabled');
 
-	$('#equals').trigger('click');
+	// $('#equals').trigger('click');
 }
 
 function eight(){
+	
+	if (number) {
+		$('#answer').val("");
+		$('#answer').val(value);
+		number = null;
+	}
+
     var value = $('#eight').val();
     var place = $('#answer').val();
 
@@ -153,11 +224,20 @@ function eight(){
 		$('#eight').disabled = true;
 	}
 	else {$('#answer').val(value);}
+	$('#add').removeAttr('disabled');
+	$('#subtract').removeAttr('disabled');
 
-	$('#equals').trigger('click');
+	// $('#equals').trigger('click');
 }
 
 function nine(){
+	
+	if (number) {
+		$('#answer').val("");
+		$('#answer').val(value);
+		number = null;
+	}
+
     var value = $('#nine').val();
     var place = $('#answer').val();
 
@@ -168,10 +248,19 @@ function nine(){
 		$('#nine').disabled = true;
 	}
 	else {$('#answer').val(value);}
+	$('#add').removeAttr('disabled');
+	$('#subtract').removeAttr('disabled');
 	// $('#equals').trigger('click');
 }
 
 function zero(){
+	
+	if (number) {
+		$('#answer').val("");
+		$('#answer').val(value);
+		number = null;
+	}
+
     var value = $('#zero').val();
     var place = $('#answer').val();
 
@@ -182,11 +271,20 @@ function zero(){
 		$('#zero').disabled = true;
 	}
 	else {$('#answer').val(value);}
+	$('#add').removeAttr('disabled');
+	$('#subtract').removeAttr('disabled');
 
-	$('#equals').trigger('click');
+	// $('#equals').trigger('click');
 }
 
 function period(){
+	
+	if (number) {
+		$('#answer').val("");
+		$('#answer').val(value);
+		number = null;
+	}
+
     var value = $('#period').val();
     var place = $('#answer').val();
 
@@ -198,6 +296,8 @@ function period(){
 		$('#period').disabled = true;
 	}
 	else {$('#answer').val(0 + value);
+	$('#add').removeAttr('disabled');
+	$('#subtract').removeAttr('disabled');
 	}
 }
 
@@ -216,33 +316,49 @@ function add(){
 	operator = $('#add').val();
 	// $('#answer1').val("");
 	$('#answer').val("");
+	$('#add').attr('disabled','disabled');
 }
 
 function subtract(){
+	console.log('subtact')
 	var place = $('#answer').val();
 	sessionStorage.setItem("first", place);
 	first = sessionStorage.getItem("first");
 	operator = $('#subtract').val();
 	// $('#answer1').val("");
-	if(second === null) {
-		console.log('no second')
-	$('#answer').val("");}
-	else{
-	console.log('second')
-	debugger
-	var place2 = $('#answer').val();
-	sessionStorage.setItem("second", place2);
-	second = sessionStorage.getItem("second");
-	var number = $('#answer').val(parseFloat(first) - parseFloat(second));
-	}
+	$('#answer').val("");
+	$('#subtract').attr('disabled','disabled');
+	// var place = $('#answer').val();
+	// sessionStorage.setItem("first", place);
+	// first = sessionStorage.getItem("first");
+	// operator = $('#subtract').val();
+	// if(second === null) {
+	// $('#answer').val("");}
+	// else{
+	// var place2 = $('#answer').val();
+	// sessionStorage.setItem("second", place2);
+	// second = sessionStorage.getItem("second");
+	// var number = $('#answer').val(parseFloat(first) - parseFloat(second));
+	// }
 }
 
 function equals(){
-	if(operator === '+') {
+	
+	if(number != null && operator === '+') {
+	var place1 = $('#answer').val();
+	number = $('#answer').val(parseFloat(place1) + parseFloat(second));
+	}
+	else if(operator === '+') {
 	var place2 = $('#answer').val();
 	sessionStorage.setItem("second", place2);
 	second = sessionStorage.getItem("second");
 	number = $('#answer').val(parseFloat(first) + parseFloat(second));
+	}
+	
+	
+	if(number != null && operator === '-') {
+	var place1 = $('#answer').val();
+	number = $('#answer').val(parseFloat(place1) - parseFloat(second));
 	}
 	else if(operator === '-') {
 	var place2 = $('#answer').val();
