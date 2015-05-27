@@ -45,6 +45,7 @@ $( document ).ready(function() {
 function one(){
 
 	if (number) {
+		(console.log('yo'))
 		$('#answer').val("");
 		$('#answer').val(value);
 		number = null;
@@ -52,6 +53,7 @@ function one(){
 
     var value = $('#one').val();
     var place = $('#answer').val();
+
 
     if (place && place.toString().length < 6) {
     	$('#answer').val(place + value);
@@ -319,7 +321,6 @@ function ac(){
 
 function add(){
 
-
 	if(first != null && number === null) {
 		console.log('second')
 		first = parseFloat(first) + parseFloat($('#answer').val());
@@ -379,24 +380,28 @@ function equals(){
 	if(number != null && operator === '+') {
 	var place1 = $('#answer').val();
 	number = $('#answer').val(parseFloat(place1) + parseFloat(second));
+	first = null
 	}
 	else if(operator === '+') {
 	var place2 = $('#answer').val();
 	sessionStorage.setItem("second", place2);
 	second = sessionStorage.getItem("second");
 	number = $('#answer').val(parseFloat(first) + parseFloat(second));
+	first = null
 	}
 	
 	
 	if(number != null && operator === '-') {
 	var place1 = $('#answer').val();
 	number = $('#answer').val(parseFloat(place1) - parseFloat(second));
+	first = null
 	}
 	else if(operator === '-') {
 	var place2 = $('#answer').val();
 	sessionStorage.setItem("second", place2);
 	second = sessionStorage.getItem("second");
 	number = $('#answer').val(parseFloat(first) - parseFloat(second));
+	first = null
 	}
 }
 
