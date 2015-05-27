@@ -430,7 +430,7 @@ function division(){
 	operator = $('#division').val();
 	// $('#answer1').val("");
 	$('#answer').val("");
-	$('#divison').attr('disabled','disabled');
+	$('#division').attr('disabled','disabled');
 }
 
 function equals(){
