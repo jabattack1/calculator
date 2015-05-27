@@ -154,7 +154,7 @@ button { cursor: pointer; cursor: hand; }
 	margin-left:94px;
 	background-size:73px 44px;
 	width:73px;
-	height:44px;
+	height:45px;
 	border-radius:11px;
 }
 
@@ -168,7 +168,7 @@ button { cursor: pointer; cursor: hand; }
 	margin-left:191px;
 	background-size:73px 44px;
 	width:73px;
-	height:44px;
+	height:45px;
 	border-radius:11px;
 }
 
@@ -182,7 +182,7 @@ button { cursor: pointer; cursor: hand; }
 	margin-left:287px;
 	background-size:73px 44px;
 	width:73px;
-	height:44px;
+	height:45px;
 	border-radius:11px;
 }
 
@@ -196,7 +196,7 @@ button { cursor: pointer; cursor: hand; }
 	margin-left:94px;
 	background-size:73px 44px;
 	width:73px;
-	height:44px;
+	height:45px;
 	border-radius:11px;
 }
 
@@ -210,7 +210,7 @@ button { cursor: pointer; cursor: hand; }
 	margin-left:191px;
 	background-size:73px 44px;
 	width:73px;
-	height:44px;
+	height:45px;
 	border-radius:11px;
 }
 
@@ -224,7 +224,7 @@ button { cursor: pointer; cursor: hand; }
 	margin-left:287px;
 	background-size:73px 44px;
 	width:73px;
-	height:44px;
+	height:45px;
 	border-radius:11px;
 }
 
@@ -238,7 +238,7 @@ button { cursor: pointer; cursor: hand; }
 	margin-left:94px;
 	background-size:73px 44px;
 	width:73px;
-	height:44px;
+	height:45px;
 	border-radius:11px;
 }
 
@@ -252,7 +252,7 @@ button { cursor: pointer; cursor: hand; }
 	margin-left:191px;
 	background-size:73px 44px;
 	width:73px;
-	height:44px;
+	height:45px;
 	border-radius:11px;
 }
 
@@ -266,7 +266,7 @@ button { cursor: pointer; cursor: hand; }
 	margin-left:287px;
 	background-size:73px 44px;
 	width:73px;
-	height:44px;
+	height:45px;
 	border-radius:11px;
 }
 
@@ -280,7 +280,7 @@ button { cursor: pointer; cursor: hand; }
 	margin-left:94px;
 	background-size:73px 44px;
 	width:73px;
-	height:44px;
+	height:45px;
 	border-radius:11px;
 }
 
@@ -294,7 +294,7 @@ button { cursor: pointer; cursor: hand; }
 	margin-left:-2px;
 	background-size:73px 44px;
 	width:73px;
-	height:44px;
+	height:45px;
 	border-radius:11px;
 }
 
@@ -308,7 +308,7 @@ button { cursor: pointer; cursor: hand; }
 	margin-left:-2px;
 	background-size:73px 44px;
 	width:73px;
-	height:44px;
+	height:45px;
 	border-radius:11px;
 }
 
@@ -322,7 +322,7 @@ button { cursor: pointer; cursor: hand; }
 	margin-left:191px;
 	background-size:73px 44px;
 	width:73px;
-	height:44px;
+	height:45px;
 	border-radius:11px;
 }
 
@@ -350,9 +350,38 @@ button { cursor: pointer; cursor: hand; }
 	margin-left:385px;
 	background-size:73px 44px;
 	width:73px;
-	height:44px;
+	height:45px;
 	border-radius:11px;
 }
+
+#times {
+	position:absolute;
+	background-image:url(./images/times.PNG);
+	background-repeat:no-repeat;
+	background-color:none;
+	z-index:2;
+	margin-top:310px;
+	margin-left:385px;
+	background-size:73px 44px;
+	width:73px;
+	height:45px;
+	border-radius:11px;
+}
+
+#division {
+	position:absolute;
+	background-image:url(./images/division.PNG);
+	background-repeat:no-repeat;
+	background-color:none;
+	z-index:2;
+	margin-top:246px;
+	margin-left:385px;
+	background-size:73px 44px;
+	width:73px;
+	height:45px;
+	border-radius:11px;
+}
+
 
 #equals {
 	position:absolute;
@@ -364,6 +393,6 @@ button { cursor: pointer; cursor: hand; }
 	margin-left:287px;
 	background-size:73px 44px;
 	width:73px;
-	height:44px;
+	height:45px;
 	border-radius:11px;
 }

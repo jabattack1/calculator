@@ -65,6 +65,8 @@ function one(){
 
 	$('#add').removeAttr('disabled');
 	$('#subtract').removeAttr('disabled');
+	$('#times').removeAttr('disabled');
+	$('#division').removeAttr('disabled');
 	// $('#equals').trigger('click');
 }
 
@@ -88,7 +90,8 @@ function two(){
 	else {$('#answer').val(value);}
 	$('#add').removeAttr('disabled');
 	$('#subtract').removeAttr('disabled');
-
+	$('#times').removeAttr('disabled');
+	$('#division').removeAttr('disabled');
 	// $('#equals').trigger('click');
 }
 
@@ -112,7 +115,8 @@ function three(){
 	else {$('#answer').val(value);}
 	$('#add').removeAttr('disabled');
 	$('#subtract').removeAttr('disabled');
-
+	$('#times').removeAttr('disabled');
+	$('#division').removeAttr('disabled');
 	// $('#equals').trigger('click');
 }
 
@@ -136,7 +140,8 @@ function four(){
 	else {$('#answer').val(value);}
 	$('#add').removeAttr('disabled');
 	$('#subtract').removeAttr('disabled');
-
+	$('#times').removeAttr('disabled');
+	$('#division').removeAttr('disabled');
 	// $('#equals').trigger('click');
 }
 
@@ -160,7 +165,8 @@ function five(){
 	else {$('#answer').val(value);}
 	$('#add').removeAttr('disabled');
 	$('#subtract').removeAttr('disabled');
-
+	$('#times').removeAttr('disabled');
+	$('#division').removeAttr('disabled');
 	// $('#equals').trigger('click');
 }
 
@@ -184,7 +190,8 @@ function six(){
 	else {$('#answer').val(value);}
 	$('#add').removeAttr('disabled');
 	$('#subtract').removeAttr('disabled');
-
+	$('#times').removeAttr('disabled');
+	$('#division').removeAttr('disabled');
 	// $('#equals').trigger('click');
 }
 
@@ -208,7 +215,8 @@ function seven(){
 	else {$('#answer').val(value);}
 	$('#add').removeAttr('disabled');
 	$('#subtract').removeAttr('disabled');
-
+	$('#times').removeAttr('disabled');
+	$('#division').removeAttr('disabled');
 	// $('#equals').trigger('click');
 }
 
@@ -232,7 +240,8 @@ function eight(){
 	else {$('#answer').val(value);}
 	$('#add').removeAttr('disabled');
 	$('#subtract').removeAttr('disabled');
-
+	$('#times').removeAttr('disabled');
+	$('#division').removeAttr('disabled');
 	// $('#equals').trigger('click');
 }
 
@@ -256,6 +265,8 @@ function nine(){
 	else {$('#answer').val(value);}
 	$('#add').removeAttr('disabled');
 	$('#subtract').removeAttr('disabled');
+	$('#times').removeAttr('disabled');
+	$('#division').removeAttr('disabled');
 	// $('#equals').trigger('click');
 }
 
@@ -279,7 +290,8 @@ function zero(){
 	else {$('#answer').val(value);}
 	$('#add').removeAttr('disabled');
 	$('#subtract').removeAttr('disabled');
-
+	$('#times').removeAttr('disabled');
+	$('#division').removeAttr('disabled');
 	// $('#equals').trigger('click');
 }
 
@@ -304,6 +316,8 @@ function period(){
 	else {$('#answer').val(0 + value);
 	$('#add').removeAttr('disabled');
 	$('#subtract').removeAttr('disabled');
+	$('#times').removeAttr('disabled');
+	$('#division').removeAttr('disabled');
 	}
 }
 
@@ -375,6 +389,50 @@ function subtract(){
 	// }
 }
 
+function times(){
+
+	if(first != null && number === null) {
+		console.log('second')
+		first = parseFloat(first) * parseFloat($('#answer').val());
+	}
+	else if(first != null && number != null) {
+		console.log('number')
+		first = parseFloat(number.val());
+	}
+	else{
+	var place = $('#answer').val();
+	sessionStorage.setItem("first", place);
+	first = sessionStorage.getItem("first");
+	}
+
+	operator = $('#times').val();
+	// $('#answer1').val("");
+	$('#answer').val("");
+	$('#times').attr('disabled','disabled');
+}
+
+function division(){
+
+	if(first != null && number === null) {
+		console.log('second')
+		first = parseFloat(first) / parseFloat($('#answer').val());
+	}
+	else if(first != null && number != null) {
+		console.log('number')
+		first = parseFloat(number.val());
+	}
+	else{
+	var place = $('#answer').val();
+	sessionStorage.setItem("first", place);
+	first = sessionStorage.getItem("first");
+	}
+
+	operator = $('#division').val();
+	// $('#answer1').val("");
+	$('#answer').val("");
+	$('#divison').attr('disabled','disabled');
+}
+
 function equals(){
 	
 	if(number != null && operator === '+') {
@@ -401,6 +459,32 @@ function equals(){
 	sessionStorage.setItem("second", place2);
 	second = sessionStorage.getItem("second");
 	number = $('#answer').val(parseFloat(first) - parseFloat(second));
+	first = null
+	}
+
+	if(number != null && operator === '*') {
+	var place1 = $('#answer').val();
+	number = $('#answer').val(parseFloat(place1) * parseFloat(second));
+	first = null
+	}
+	else if(operator === '*') {
+	var place2 = $('#answer').val();
+	sessionStorage.setItem("second", place2);
+	second = sessionStorage.getItem("second");
+	number = $('#answer').val(parseFloat(first) * parseFloat(second));
+	first = null
+	}
+
+	if(number != null && operator === '/') {
+	var place1 = $('#answer').val();
+	number = $('#answer').val(parseFloat(place1) / parseFloat(second));
+	first = null
+	}
+	else if(operator === '/') {
+	var place2 = $('#answer').val();
+	sessionStorage.setItem("second", place2);
+	second = sessionStorage.getItem("second");
+	number = $('#answer').val(parseFloat(first) / parseFloat(second));
 	first = null
 	}
 }
