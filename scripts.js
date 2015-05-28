@@ -570,5 +570,15 @@ function mr (){
 	$('#division').removeAttr('disabled');
 }
 
+function percentage (){
+	var number = $('#answer').val();
+	var n = parseFloat(number);
+  	var v = n/Math.pow(10, 2);
+	$('#answer').val(v);
+	$('#add').removeAttr('disabled');
+	$('#subtract').removeAttr('disabled');
+	$('#times').removeAttr('disabled');
+	$('#division').removeAttr('disabled');
+}
 
 
