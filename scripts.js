@@ -540,10 +540,34 @@ function mplus (){
 	sessionStorage.setItem("memory", place);
 	sessionStorage.getItem("memory");
 	$('#answer').val("");
+	$('#add').removeAttr('disabled');
+	$('#subtract').removeAttr('disabled');
+	$('#times').removeAttr('disabled');
+	$('#division').removeAttr('disabled');
 }
 
 function mminus (){
-	sessionStorage.removeItem("memory")
+	sessionStorage.removeItem("memory");
+	$('#add').removeAttr('disabled');
+	$('#subtract').removeAttr('disabled');
+	$('#times').removeAttr('disabled');
+	$('#division').removeAttr('disabled');
+}
+
+function mc (){
+	sessionStorage.clear();
+	$('#add').removeAttr('disabled');
+	$('#subtract').removeAttr('disabled');
+	$('#times').removeAttr('disabled');
+	$('#division').removeAttr('disabled');
+}
+
+function mr (){
+	$('#answer').val(sessionStorage.getItem("memory"));
+	$('#add').removeAttr('disabled');
+	$('#subtract').removeAttr('disabled');
+	$('#times').removeAttr('disabled');
+	$('#division').removeAttr('disabled');
 }
 
 
