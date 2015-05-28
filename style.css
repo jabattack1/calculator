@@ -36,6 +36,15 @@ body {
 	color:#2F62D8;
 }
 
+#masking {
+	position: absolute;
+	margin-top:235px;
+	margin-left:200px;
+	height:60px;
+	width: 250px;
+	z-index:7;
+}
+
 #tofu {
 	position: absolute;
 	margin-top:10px;
