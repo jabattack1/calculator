@@ -162,6 +162,30 @@ body {
 
 }
 
+#trick{
+	position:absolute;
+	font-family:'digi';
+	background:url(./images/screen.png);
+	background-size:454px 130px;
+	font-size: 130px;
+	margin-top:0px;
+	margin-left:0px;
+	z-index:0;
+	/*text-shadow: .5px .5px .5px #FFFFFF;*/
+	direction:RTL;
+	text-align:right;
+	width:455px;
+	height:127px;
+	border-radius: 10px;
+	border: none;
+	color: transparent;
+	text-shadow: 0 0 0 black;
+	&:focus {
+    	outline: none;
+	}
+
+}
+
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 

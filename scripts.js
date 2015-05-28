@@ -28,13 +28,16 @@ var operator = null;
 var after_operator = 1;
 var oppo = null;
 
+var trick = "<input  onfocus='this.blur()' readonly='readonly' type='number' step='any' id='trick' maxlength='6' onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>"
+
 
 $('#answer').keydown(false);
 
-$('#answer').maxLength=4;
+$('#answer').maxLength=6;
 
 $( document ).ready(function() {
-    console.log( "ready!" );
+    $('#textarea-wrapper').append(trick);
+	$('#trick').val(0);
 });
 
 // for (i = 0; i < $('#answer').val().length; i++) { 
@@ -46,7 +49,7 @@ $( document ).ready(function() {
 // }
 
 function one(){
-
+	$("#trick").remove();
 	if (number) {
 		(console.log('yo'))
 		$('#answer').val("");
@@ -95,7 +98,6 @@ function two(){
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
 	$('#division').removeAttr('disabled');
-	// $('#equals').trigger('click');
 }
 
 function three(){
@@ -120,7 +122,6 @@ function three(){
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
 	$('#division').removeAttr('disabled');
-	// $('#equals').trigger('click');
 }
 
 function four(){
@@ -145,7 +146,6 @@ function four(){
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
 	$('#division').removeAttr('disabled');
-	// $('#equals').trigger('click');
 }
 
 function five(){
@@ -170,7 +170,6 @@ function five(){
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
 	$('#division').removeAttr('disabled');
-	// $('#equals').trigger('click');
 }
 
 function six(){
@@ -195,7 +194,6 @@ function six(){
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
 	$('#division').removeAttr('disabled');
-	// $('#equals').trigger('click');
 }
 
 function seven(){
@@ -220,7 +218,6 @@ function seven(){
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
 	$('#division').removeAttr('disabled');
-	// $('#equals').trigger('click');
 }
 
 function eight(){
@@ -245,7 +242,6 @@ function eight(){
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
 	$('#division').removeAttr('disabled');
-	// $('#equals').trigger('click');
 }
 
 function nine(){
@@ -270,7 +266,6 @@ function nine(){
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
 	$('#division').removeAttr('disabled');
-	// $('#equals').trigger('click');
 }
 
 function zero(){
@@ -295,7 +290,6 @@ function zero(){
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
 	$('#division').removeAttr('disabled');
-	// $('#equals').trigger('click');
 }
 
 function period(){
@@ -328,6 +322,8 @@ function c(){
 	second = null;
 	first = null;
 	$('#answer').val("");
+	$('#textarea-wrapper').append(trick);
+	$('#trick').val(0);
 }
 
 function ac(){
