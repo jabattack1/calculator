@@ -28,8 +28,15 @@ var operator = null;
 var after_operator = 1;
 var oppo = null;
 
-var trick = "<input  onfocus='this.blur()' readonly='readonly' type='number' step='any' id='trick' maxlength='6' onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>"
+var trick = "<input  onfocus='this.blur()' readonly='readonly' type='number' step='any' id='trick' maxlength='6' onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>";
+var e = "<p id='e'>E</p>";
 
+if (isNaN() === true) {
+	console.log('NaN');
+	$('#textarea-wrapper').append(trick);
+	$('#trick').val(0);
+	$('#textarea-wrapper').append(e);
+	}
 
 $('#answer').keydown(false);
 
@@ -50,6 +57,7 @@ $( document ).ready(function() {
 
 function one(){
 	$("#trick").remove();
+	$("#e").remove();
 	if (number) {
 		(console.log('yo'))
 		$('#answer').val("");
@@ -78,6 +86,7 @@ function one(){
 
 function two(){
 	$("#trick").remove();
+	$("#e").remove();
 	if (number) {
 		$('#answer').val("");
 		$('#answer').val(value);
@@ -102,6 +111,7 @@ function two(){
 
 function three(){
 	$("#trick").remove();
+	$("#e").remove();
 	if (number) {
 		$('#answer').val("");
 		$('#answer').val(value);
@@ -126,6 +136,7 @@ function three(){
 
 function four(){
 	$("#trick").remove();
+	$("#e").remove();
 	if (number) {
 		$('#answer').val("");
 		$('#answer').val(value);
@@ -150,6 +161,7 @@ function four(){
 
 function five(){
 	$("#trick").remove();
+	$("#e").remove();
 	if (number) {
 		$('#answer').val("");
 		$('#answer').val(value);
@@ -174,6 +186,7 @@ function five(){
 
 function six(){
 	$("#trick").remove();
+	$("#e").remove();
 	if (number) {
 		$('#answer').val("");
 		$('#answer').val(value);
@@ -198,6 +211,7 @@ function six(){
 
 function seven(){
 	$("#trick").remove();
+	$("#e").remove();
 	if (number) {
 		$('#answer').val("");
 		$('#answer').val(value);
@@ -222,6 +236,7 @@ function seven(){
 
 function eight(){
 	$("#trick").remove();
+	$("#e").remove();
 	if (number) {
 		$('#answer').val("");
 		$('#answer').val(value);
@@ -246,6 +261,7 @@ function eight(){
 
 function nine(){
 	$("#trick").remove();
+	$("#e").remove();
 	if (number) {
 		$('#answer').val("");
 		$('#answer').val(value);
@@ -270,6 +286,7 @@ function nine(){
 
 function zero(){
 	$("#trick").remove();
+	$("#e").remove();
 	if (number) {
 		$('#answer').val("");
 		$('#answer').val(value);
@@ -294,6 +311,7 @@ function zero(){
 
 function period(){
 	$("#trick").remove();
+	$("#e").remove();
 	if (number) {
 		$('#answer').val("");
 		$('#answer').val(value);
@@ -321,6 +339,8 @@ function period(){
 function c(){
 	second = null;
 	first = null;
+	$("#trick").remove();
+	$("#e").remove();
 	$('#answer').val("");
 
 	if($('#trick').length == 0){
@@ -336,6 +356,8 @@ function c(){
 function ac(){
 	second = null;
 	first = null;
+	$("#trick").remove();
+	$("#e").remove();
 	$('#answer').val("");
 
 	if($('#trick').length == 0){
@@ -605,11 +627,20 @@ function swoosh(){
 	var number = $('#answer').val();
 	var n = parseFloat(number);
 	var v = Math.sqrt(n);
+	
+	if (isNaN(v) === true) {
+	console.log('NaN');
+	$('#textarea-wrapper').append(trick);
+	$('#trick').val(0);
+	$('#textarea-wrapper').append(e);
+	}
+	else {
 	$('#answer').val(v);
 	$('#add').removeAttr('disabled');
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
 	$('#division').removeAttr('disabled');
+	}
 }
 
 
