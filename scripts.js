@@ -535,6 +535,16 @@ function equals(){
 	}
 }
 
+function mplus (){
+	var place = $('#answer').val();
+	sessionStorage.setItem("memory", place);
+	sessionStorage.getItem("memory");
+	$('#answer').val("");
+}
+
+function mminus (){
+	sessionStorage.removeItem("memory")
+}
 
 
 
