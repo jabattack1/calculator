@@ -96,6 +96,16 @@ body {
 	z-index:-1;
 }
 
+#welcome {
+	font-family:'sister';
+	position: absolute;
+	margin-top:33px;
+	margin-left:770px;
+	height:360px;
+	width: 340px;
+	z-index:1;
+}
+
 #bone {
 	position:absolute;
 	background:url(./images/bone.png);
