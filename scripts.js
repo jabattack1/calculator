@@ -23,7 +23,10 @@ console.log('cool');
 
 var second = null;
 var first = null;
-number = null
+number = null;
+var operator = null;
+var after_operator = 1;
+var oppo = null;
 
 
 $('#answer').keydown(false);
@@ -335,12 +338,19 @@ function ac(){
 
 function add(){
 
-	if(first != null && number === null) {
-		console.log('second')
+	if(operator === $('#subtract').val()){
+		first = parseFloat(first) - parseFloat($('#answer').val());
+	} 
+	else if(operator === $('#times').val()){
+		first = parseFloat(first) * parseFloat($('#answer').val());
+	}
+	else if(operator === $('#division').val()){
+		first = parseFloat(first) / parseFloat($('#answer').val());
+	}  
+	else if(first != null && number === null && operator === $('#add').val()) {
 		first = parseFloat(first) + parseFloat($('#answer').val());
 	}
 	else if(first != null && number != null) {
-		console.log('number')
 		first = parseFloat(number.val());
 	}
 	else{
@@ -356,8 +366,17 @@ function add(){
 }
 
 function subtract(){
-	
-	if(first != null && number === null) {
+
+	if(operator === $('#add').val()){
+		first = parseFloat(first) + parseFloat($('#answer').val());
+	}
+	else if(operator === $('#times').val()){
+		first = parseFloat(first) * parseFloat($('#answer').val());
+	}
+	else if(operator === $('#division').val()){
+		first = parseFloat(first) / parseFloat($('#answer').val());
+	}  
+	else if(first != null && number === null && operator === $('#subtract').val()) {
 		console.log('second')
 		first = parseFloat(first) - parseFloat($('#answer').val());
 	}
@@ -391,7 +410,16 @@ function subtract(){
 
 function times(){
 
-	if(first != null && number === null) {
+	if(operator === $('#add').val()){
+		first = parseFloat(first) + parseFloat($('#answer').val());
+	}
+	else if(operator === $('#subtract').val()){
+		first = parseFloat(first) - parseFloat($('#answer').val());
+	}
+	else if(operator === $('#division').val()){
+		first = parseFloat(first) / parseFloat($('#answer').val());
+	}  
+	else if(first != null && number === null && operator === $('#times').val()) {
 		console.log('second')
 		first = parseFloat(first) * parseFloat($('#answer').val());
 	}
@@ -413,7 +441,16 @@ function times(){
 
 function division(){
 
-	if(first != null && number === null) {
+	if(operator === $('#add').val()){
+		first = parseFloat(first) + parseFloat($('#answer').val());
+	}
+	else if(operator === $('#times').val()){
+		first = parseFloat(first) * parseFloat($('#answer').val());
+	}
+	else if(operator === $('#subtract').val()){
+		first = parseFloat(first) - parseFloat($('#answer').val());
+	}  	
+	else if(first != null && number === null && operator === $('#division').val()) {
 		console.log('second')
 		first = parseFloat(first) / parseFloat($('#answer').val());
 	}
@@ -438,54 +475,63 @@ function equals(){
 	if(number != null && operator === '+') {
 	var place1 = $('#answer').val();
 	number = $('#answer').val(parseFloat(place1) + parseFloat(second));
-	first = null
+	first = null;
 	}
 	else if(operator === '+') {
 	var place2 = $('#answer').val();
 	sessionStorage.setItem("second", place2);
 	second = sessionStorage.getItem("second");
 	number = $('#answer').val(parseFloat(first) + parseFloat(second));
-	first = null
+	var op = operator;
+	sessionStorage.setItem("oper", op);
+	oppo = sessionStorage.getItem("oper");
+	first = null;
+	operator = null;
 	}
-	
 	
 	if(number != null && operator === '-') {
 	var place1 = $('#answer').val();
 	number = $('#answer').val(parseFloat(place1) - parseFloat(second));
-	first = null
+	first = null;
 	}
 	else if(operator === '-') {
 	var place2 = $('#answer').val();
 	sessionStorage.setItem("second", place2);
 	second = sessionStorage.getItem("second");
 	number = $('#answer').val(parseFloat(first) - parseFloat(second));
-	first = null
+	first = null;
+	var op = operator;
+	sessionStorage.setItem("oper", op);
+	oppo = sessionStorage.getItem("oper");
+	operator = null;
 	}
 
 	if(number != null && operator === '*') {
 	var place1 = $('#answer').val();
 	number = $('#answer').val(parseFloat(place1) * parseFloat(second));
-	first = null
+	first = null;
 	}
 	else if(operator === '*') {
 	var place2 = $('#answer').val();
 	sessionStorage.setItem("second", place2);
 	second = sessionStorage.getItem("second");
 	number = $('#answer').val(parseFloat(first) * parseFloat(second));
-	first = null
+	first = null;
+	operator = null;
 	}
 
 	if(number != null && operator === '/') {
 	var place1 = $('#answer').val();
 	number = $('#answer').val(parseFloat(place1) / parseFloat(second));
-	first = null
+	first = null;
 	}
 	else if(operator === '/') {
 	var place2 = $('#answer').val();
 	sessionStorage.setItem("second", place2);
 	second = sessionStorage.getItem("second");
 	number = $('#answer').val(parseFloat(first) / parseFloat(second));
-	first = null
+	first = null;
+	operator = null;
 	}
 }
 
