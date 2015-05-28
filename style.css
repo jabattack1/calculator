@@ -87,6 +87,15 @@ body {
 	z-index:-1;
 }
 
+#note {
+	position: absolute;
+	margin-top:-30px;
+	margin-left:749.5px;
+	height:360px;
+	width: 340px;
+	z-index:-1;
+}
+
 #bone {
 	position:absolute;
 	background:url(./images/bone.png);
