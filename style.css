@@ -382,7 +382,6 @@ button { cursor: pointer; cursor: hand; }
 	border-radius:11px;
 }
 
-
 #equals {
 	position:absolute;
 	background-image:url(./images/equals.png);
@@ -396,3 +395,91 @@ button { cursor: pointer; cursor: hand; }
 	height:45px;
 	border-radius:11px;
 }
+
+#mplus {
+	position:absolute;
+	background-image:url(./images/m+.PNG);
+	background-repeat:no-repeat;
+	background-color:none;
+	z-index:2;
+	margin-top:246px;
+	margin-left:287px;
+	background-size:73px 44px;
+	width:73px;
+	height:45px;
+	border-radius:11px;
+}
+
+#mminus {
+	position:absolute;
+	background-image:url(./images/m-.PNG);
+	background-repeat:no-repeat;
+	background-color:none;
+	z-index:2;
+	margin-top:246px;
+	margin-left:191px;
+	background-size:73px 44px;
+	width:73px;
+	height:45px;
+	border-radius:11px;
+}
+
+#mr {
+	position:absolute;
+	background-image:url(./images/mr.PNG);
+	background-repeat:no-repeat;
+	background-color:none;
+	z-index:2;
+	margin-top:246px;
+	margin-left:94px;
+	background-size:73px 44px;
+	width:73px;
+	height:45px;
+	border-radius:11px;
+}
+
+#mc {
+	position:absolute;
+	background-image:url(./images/mc.PNG);
+	background-repeat:no-repeat;
+	background-color:none;
+	z-index:2;
+	margin-top:246px;
+	margin-left:-2px;
+	background-size:73px 44px;
+	width:73px;
+	height:45px;
+	border-radius:11px;
+}
+
+#percentage {
+	position:absolute;
+	background-image:url(./images/percentage.PNG);
+	background-repeat:no-repeat;
+	background-color:none;
+	z-index:2;
+	margin-top:310px;
+	margin-left:-2px;
+	background-size:73px 44px;
+	width:73px;
+	height:45px;
+	border-radius:11px;
+}
+
+#swoosh {
+	position:absolute;
+	background-image:url(./images/swoosh.PNG);
+	background-repeat:no-repeat;
+	background-color:none;
+	z-index:2;
+	margin-top:374px;
+	margin-left:-2px;
+	background-size:73px 44px;
+	width:73px;
+	height:45px;
+	border-radius:11px;
+}
+
+
+
+
