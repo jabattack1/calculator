@@ -28,15 +28,10 @@ var operator = null;
 var after_operator = 1;
 var oppo = null;
 
+
 var trick = "<input  onfocus='this.blur()' readonly='readonly' type='number' step='any' id='trick' maxlength='6' onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>";
 var e = "<p id='e'>E</p>";
 
-if (isNaN() === true) {
-	console.log('NaN');
-	$('#textarea-wrapper').append(trick);
-	$('#trick').val(0);
-	$('#textarea-wrapper').append(e);
-	}
 
 $('#answer').keydown(false);
 
@@ -46,6 +41,12 @@ $( document ).ready(function() {
     $('#textarea-wrapper').append(trick);
 	$('#trick').val(0);
 });
+if (isNaN() === true) {
+	console.log('NaN');
+	$('#textarea-wrapper').append(trick);
+	$('#trick').val(0);
+	$('#textarea-wrapper').append(e);
+	}
 
 // for (i = 0; i < $('#answer').val().length; i++) { 
 // 		var loop = $('#answer').val();
@@ -613,10 +614,31 @@ function mr (){
 }
 
 function percentage (){
-	var number = $('#answer').val();
-	var n = parseFloat(number);
+
+	if(operator === $('#add').val()){
+		first = parseFloat(first) + parseFloat($('#answer').val());
+		var number1 = first;
+	} 
+	else if(operator === $('#subtract').val()){
+		first = parseFloat(first) - parseFloat($('#answer').val());
+		var number1 = first;
+	}
+	else if(operator === $('#times').val()){
+		first = parseFloat(first) * parseFloat($('#answer').val());
+		var number1 = first;
+	}
+	else if(operator === $('#division').val()){
+		first = parseFloat(first) / parseFloat($('#answer').val());
+		var number1 = first;
+	} 
+	else {
+		number1 = parseFloat($('#answer').val());
+	} 
+	
+	var n = parseFloat(number1);
   	var v = n/Math.pow(10, 2);
-	$('#answer').val(v);
+	number = $('#answer').val(v);
+
 	$('#add').removeAttr('disabled');
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
@@ -624,10 +646,37 @@ function percentage (){
 }
 
 function swoosh(){
-	var number = $('#answer').val();
-	var n = parseFloat(number);
+
+	if(operator === $('#add').val()){
+		first = parseFloat(first) + parseFloat($('#answer').val());
+		var number1 = first;
+	} 
+	else if(operator === $('#subtract').val()){
+		first = parseFloat(first) - parseFloat($('#answer').val());
+		var number1 = first;
+	}
+	else if(operator === $('#times').val()){
+		first = parseFloat(first) * parseFloat($('#answer').val());
+		var number1 = first;
+	}
+	else if(operator === $('#division').val()){
+		first = parseFloat(first) / parseFloat($('#answer').val());
+		var number1 = first;
+	} 
+	else {
+		var number1 = parseFloat($('#answer').val());
+	} 
+	// else if(first != null && number === null && operator === $('#add').val()) {
+	// 	first = parseFloat(first) + parseFloat($('#answer').val());
+	// }
+	// else if(first != null && number != null) {
+	// 	first = parseFloat(number.val());
+	// }
+	
+	var n = parseFloat(number1);
 	var v = Math.sqrt(n);
 	
+
 	if (isNaN(v) === true) {
 	console.log('NaN');
 	$('#textarea-wrapper').append(trick);
@@ -635,7 +684,7 @@ function swoosh(){
 	$('#textarea-wrapper').append(e);
 	}
 	else {
-	$('#answer').val(v);
+	number = $('#answer').val(v);
 	$('#add').removeAttr('disabled');
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
