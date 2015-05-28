@@ -322,14 +322,30 @@ function c(){
 	second = null;
 	first = null;
 	$('#answer').val("");
+
+	if($('#trick').length == 0){
+		console.log("trick");
 	$('#textarea-wrapper').append(trick);
 	$('#trick').val(0);
+	}
+	else{
+		console.log("already");
+		null;}
 }
 
 function ac(){
 	second = null;
 	first = null;
 	$('#answer').val("");
+
+	if($('#trick').length == 0){
+		console.log("trick");
+	$('#textarea-wrapper').append(trick);
+	$('#trick').val(0);
+	}
+	else{
+		console.log("already");
+		null;}
 }
 
 function add(){
