@@ -434,7 +434,7 @@ function times(){
 	}
 
 	operator = $('#times').val();
-	// $('#answer1').val("");
+	
 	$('#answer').val("");
 	$('#times').attr('disabled','disabled');
 }
@@ -465,7 +465,7 @@ function division(){
 	}
 
 	operator = $('#division').val();
-	// $('#answer1').val("");
+	
 	$('#answer').val("");
 	$('#division').attr('disabled','disabled');
 }
