@@ -643,6 +643,7 @@ function percentage (){
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
 	$('#division').removeAttr('disabled');
+	operator = null;
 }
 
 function swoosh(){
@@ -689,6 +690,7 @@ function swoosh(){
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
 	$('#division').removeAttr('disabled');
+	operator = null;
 	}
 }
 
