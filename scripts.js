@@ -77,7 +77,7 @@ function one(){
 }
 
 function two(){
-	
+	$("#trick").remove();
 	if (number) {
 		$('#answer').val("");
 		$('#answer').val(value);
@@ -101,7 +101,7 @@ function two(){
 }
 
 function three(){
-	
+	$("#trick").remove();
 	if (number) {
 		$('#answer').val("");
 		$('#answer').val(value);
@@ -125,7 +125,7 @@ function three(){
 }
 
 function four(){
-	
+	$("#trick").remove();
 	if (number) {
 		$('#answer').val("");
 		$('#answer').val(value);
@@ -149,7 +149,7 @@ function four(){
 }
 
 function five(){
-	
+	$("#trick").remove();
 	if (number) {
 		$('#answer').val("");
 		$('#answer').val(value);
@@ -173,7 +173,7 @@ function five(){
 }
 
 function six(){
-	
+	$("#trick").remove();
 	if (number) {
 		$('#answer').val("");
 		$('#answer').val(value);
@@ -197,7 +197,7 @@ function six(){
 }
 
 function seven(){
-	
+	$("#trick").remove();
 	if (number) {
 		$('#answer').val("");
 		$('#answer').val(value);
@@ -221,7 +221,7 @@ function seven(){
 }
 
 function eight(){
-	
+	$("#trick").remove();
 	if (number) {
 		$('#answer').val("");
 		$('#answer').val(value);
@@ -245,7 +245,7 @@ function eight(){
 }
 
 function nine(){
-	
+	$("#trick").remove();
 	if (number) {
 		$('#answer').val("");
 		$('#answer').val(value);
@@ -269,7 +269,7 @@ function nine(){
 }
 
 function zero(){
-	
+	$("#trick").remove();
 	if (number) {
 		$('#answer').val("");
 		$('#answer').val(value);
@@ -293,7 +293,7 @@ function zero(){
 }
 
 function period(){
-	
+	$("#trick").remove();
 	if (number) {
 		$('#answer').val("");
 		$('#answer').val(value);
@@ -333,6 +333,8 @@ function ac(){
 }
 
 function add(){
+	$('#textarea-wrapper').append(trick);
+	$('#trick').val($('#answer').val());
 
 	if(operator === $('#subtract').val()){
 		first = parseFloat(first) - parseFloat($('#answer').val());
@@ -362,6 +364,8 @@ function add(){
 }
 
 function subtract(){
+	$('#textarea-wrapper').append(trick);
+	$('#trick').val($('#answer').val());
 
 	if(operator === $('#add').val()){
 		first = parseFloat(first) + parseFloat($('#answer').val());
@@ -405,7 +409,9 @@ function subtract(){
 }
 
 function times(){
-
+	$('#textarea-wrapper').append(trick);
+	$('#trick').val($('#answer').val());
+	
 	if(operator === $('#add').val()){
 		first = parseFloat(first) + parseFloat($('#answer').val());
 	}
@@ -436,7 +442,9 @@ function times(){
 }
 
 function division(){
-
+	$('#textarea-wrapper').append(trick);
+	$('#trick').val($('#answer').val());
+	
 	if(operator === $('#add').val()){
 		first = parseFloat(first) + parseFloat($('#answer').val());
 	}
