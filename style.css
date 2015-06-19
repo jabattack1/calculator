@@ -5,12 +5,10 @@ body {
   /*background: url() no-repeat;*/
   /*background-color:black;*/
   background:url(./images/deskt.jpg) repeat-y center top;
-  background-size: 100% 100%;
+  background-size: 1280px 760px;
   background-repeat: no-repeat;
-	 width:1000px;
-    min-width:1000px;
-    height: 700px;
-
+	width:900px;
+  	height: 600px;
   	margin: 0 auto;
   position:relative;
   /*background-color:red;*/
