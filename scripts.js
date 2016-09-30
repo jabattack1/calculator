@@ -1,5 +1,5 @@
 console.log('cool');
-console.log($().jquery);
+
 // var answer2 = "<input  onfocus=\"this.blur()\" readonly=\"readonly\" type='number' step=\"any\" id=\'answer\' maxlength=\"6\" onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>"
 
 // var answer = $('#answer').text()[0];
@@ -27,10 +27,9 @@ number = null;
 var operator = null;
 var after_operator = 1;
 var oppo = null;
-var zero = 0;
-var zeroTrigger = false;
 
-var trick = "<input  onfocus='this.blur()' readonly='readonly' type='number' step='any' id='trick' maxlength='6' onkeypress='return event.charCode >= 48 && event.charCode <= 57' ></input>";
+
+var trick = "<input  onfocus='this.blur()' readonly='readonly' type='number' step='any' id='trick' maxlength='6' onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>";
 var e = "<p id='e'>E</p>";
 
 
@@ -72,7 +71,7 @@ function one(){
 
 
     if (place && place.toString().length < 6) {
-  		$('#answer').val(place + value);
+    	$('#answer').val(place + value);
 	}
 	else if (place.toString().length > 5) {
 		$('#one').disabled = true;
@@ -312,7 +311,6 @@ function zero(){
 }
 
 function period(){
-	console.log('period')
 	$("#trick").remove();
 	$("#e").remove();
 	if (number) {
@@ -323,7 +321,7 @@ function period(){
 
     var value = $('#period').val();
     var place = $('#answer').val();
- 
+
 
     if(place && place.toString().length < 6) {
     $('#answer').val(place + value);
@@ -331,7 +329,7 @@ function period(){
 	else if (place.toString().length > 5) {
 		$('#period').disabled = true;
 	}
-	else {console.log('heck');$('#answer').val(0 + value);
+	else {$('#answer').val(0 + value);
 	$('#add').removeAttr('disabled');
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
