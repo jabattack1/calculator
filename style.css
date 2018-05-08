@@ -31,12 +31,12 @@ body {
 }
 
 #name {
-	font-family:'sister';
-	margin-top:237px;
-	margin-left: 210px;
+	font-family:'Alice';
+	margin-top:240px;
+	margin-left: 230px;
 	position: absolute;
 	z-index:8;
-	font-size:27px;
+	font-size:50px;
 }
 
 #e {
@@ -116,10 +116,11 @@ body {
 }
 
 #welcome {
-	font-family:'sister';
+	font-family:'Alice';
+	font-size:30px;
 	position: absolute;
-	margin-top:33px;
-	margin-left:770px;
+	margin-top:15px;
+	margin-left:775px;
 	height:360px;
 	width: 340px;
 	z-index:1;
@@ -155,6 +156,11 @@ body {
 @font-face {
     font-family: 'sister'; /*a name to be used later*/
     src: url(./images/LoveYaLikeASister.ttf); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'alice'; /*a name to be used later*/
+    src: url(./images/JustAlice.ttf); /*URL to font*/
 }
 
 #answer{
