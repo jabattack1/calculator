@@ -517,7 +517,7 @@ function division(){
 function equals(){
 	
 	if(number != null && operator === '+') {
-
+		console.log(place);
 	var place1 = $('#answer').val();
 	number = $('#answer').val(parseFloat(place1) + parseFloat(second));
 	first = null;
