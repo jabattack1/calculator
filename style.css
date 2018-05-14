@@ -172,7 +172,7 @@ body {
 	margin-top:0px;
 	margin-left:0px;
 	z-index:0;
-	float: left;
+	float: right;
 	/*text-shadow: .5px .5px .5px #FFFFFF;*/
 	direction:RTL;
 	text-align:right;
