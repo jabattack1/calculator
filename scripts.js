@@ -603,6 +603,7 @@ function mc (){
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
 	$('#division').removeAttr('disabled');
+	$('#trick').val(0);
 }
 
 function mr (){
