@@ -392,6 +392,7 @@ function add(){
 	}
 	else{
 	console.log("store");
+
 	var place = $('#answer').val();
 	sessionStorage.setItem("first", place);
 	first = sessionStorage.getItem("first");
@@ -630,6 +631,20 @@ function mr (){
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
 	$('#division').removeAttr('disabled');
+		second = null;
+	first = null;
+	$("#trick").remove();
+	$("#e").remove();
+	$('#answer').val("");
+
+	if($('#trick').length == 0){
+		console.log("trick");
+	$('#textarea-wrapper').append(trick);
+	$('#trick').val(0);
+	}
+	else{
+		console.log("already");
+		null;}
 }
 
 function percentage (){
