@@ -396,6 +396,7 @@ function add(){
 
 	var place = $('#answer').val();
 	$('#answer').val();$('#answer').val();
+		sessionStorage.setItem("first", place);
 	first = sessionStorage.getItem("first");
 	}
 
