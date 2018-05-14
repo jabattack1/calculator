@@ -172,9 +172,8 @@ body {
 	margin-top:0px;
 	margin-left:0px;
 	z-index:0;
-	direction: rtl;
+	/*direction: rtl;*/
 	/*text-shadow: .5px .5px .5px #FFFFFF;*/
-	direction:RTL;
 	text-align:right;
 	width:455px;
 	height:127px;
