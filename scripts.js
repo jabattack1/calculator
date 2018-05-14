@@ -628,7 +628,7 @@ function mc (){
 function mr (){
 	console.log(sessionStorage.getItem("memory"));
 	var value = $('#answer').val(sessionStorage.getItem("memory"));
-	var value2 = parseFloat(value);
+	var value2 = parseInt(value);
 	var place = $('#answer').val();
 
 
