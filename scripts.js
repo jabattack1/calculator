@@ -629,7 +629,8 @@ function mr (){
 	console.log(sessionStorage.getItem("memory"));
 	$('#answer').val(sessionStorage.getItem("memory"));
 	var ha = $('#answer').val();
-	$('#answer').val(ha);
+	var numb = parseFloat(ha);
+	$('#answer').val(numb);
 	$('#add').removeAttr('disabled');
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
