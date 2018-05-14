@@ -385,6 +385,7 @@ function add(){
 		first = parseFloat(first) / parseFloat($('#answer').val());
 	}  
 	else if(first != null && number === null && operator === $('#add').val()) {
+		console.log("is");
 		first = parseFloat(first) + parseFloat($('#answer').val());
 	}
 	else if(first != null && number != null) {
@@ -631,6 +632,7 @@ function mr (){
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
 	$('#division').removeAttr('disabled');
+
 }
 
 function percentage (){
