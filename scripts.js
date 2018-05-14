@@ -627,10 +627,18 @@ function mc (){
 
 function mr (){
 	console.log(sessionStorage.getItem("memory"));
-	$('#answer').val(sessionStorage.getItem("memory"));
-	var ha = $('#answer').val();
-	var numb = parseFloat(ha);
-	$('#answer').val(numb);
+	var value = $('#answer').val(sessionStorage.getItem("memory"));
+	var place = $('#answer').val();
+
+
+    if (place && place.toString().length < 6) {
+    	$('#answer').val(place + value);
+	}
+	else if (place.toString().length > 5) {
+		$('#one').disabled = true;
+	}
+	else {$('#answer').val(value);}
+
 	$('#add').removeAttr('disabled');
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
