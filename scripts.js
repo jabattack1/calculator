@@ -632,13 +632,14 @@ function mr (){
 	var value = $('#answer').val(sessionStorage.getItem("memory"));
 	var value2 = parseFloat(value.val());
 	var place = $('#answer').val();
-
+		$("#trick").remove();
+	$("#e").remove();
 		if (number) {
 		$('#answer').val("");
 		$('#answer').val(value);
 		number = null;
 	}
-	
+
   if (place.toString().length > 5) {
 		console.log("wtfff");
 		$('#mr').disabled = true;
