@@ -633,13 +633,16 @@ function mr (){
 
 
     if (place && place.toString().length < 6) {
-    	console.log("wtf");
     	$('#answer').val(place + value2);
 	}
 	else if (place.toString().length > 5) {
 		$('#one').disabled = true;
 	}
-	else {$('#answer').val(value2);}
+
+	else {
+		console.log("wtf");
+		$('#answer').val(value2);
+	}
 
 	$('#add').removeAttr('disabled');
 	$('#subtract').removeAttr('disabled');
