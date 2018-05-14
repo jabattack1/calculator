@@ -391,9 +391,9 @@ function add(){
 		first = parseFloat(number.val());
 	}
 	else{
+	console.log("store");
 	var place = $('#answer').val();
 	sessionStorage.setItem("first", place);
-	console.log("store");
 	first = sessionStorage.getItem("first");
 	}
 
