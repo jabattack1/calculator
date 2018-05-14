@@ -582,7 +582,7 @@ function mplus (){
 	var place = $('#answer').val();
 	sessionStorage.setItem("memory", place);
 	sessionStorage.getItem("memory");
-	$('#answer').val("memory");
+	$('#answer').val(place);
 	$('#add').removeAttr('disabled');
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
