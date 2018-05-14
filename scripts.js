@@ -516,12 +516,13 @@ function division(){
 function equals(){
 	
 	if(number != null && operator === '+') {
-		console.log("go");
+
 	var place1 = $('#answer').val();
 	number = $('#answer').val(parseFloat(place1) + parseFloat(second));
 	first = null;
 	}
 	else if(operator === '+') {
+			console.log("go");
 	var place2 = $('#answer').val();
 	sessionStorage.setItem("second", place2);
 	second = sessionStorage.getItem("second");
