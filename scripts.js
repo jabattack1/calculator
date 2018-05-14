@@ -523,6 +523,7 @@ function equals(){
 	first = null;
 	}
 	else if(operator === '+') {
+		console.log("store2");
 	var place2 = $('#answer').val();
 	sessionStorage.setItem("second", place2);
 	second = sessionStorage.getItem("second");
