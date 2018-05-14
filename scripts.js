@@ -393,6 +393,7 @@ function add(){
 	else{
 	var place = $('#answer').val();
 	sessionStorage.setItem("first", place);
+	console.log("store");
 	first = sessionStorage.getItem("first");
 	}
 
@@ -522,7 +523,6 @@ function equals(){
 	first = null;
 	}
 	else if(operator === '+') {
-			console.log("go");
 	var place2 = $('#answer').val();
 	sessionStorage.setItem("second", place2);
 	second = sessionStorage.getItem("second");
