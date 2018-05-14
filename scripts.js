@@ -624,6 +624,7 @@ function mc (){
 }
 
 function mr (){
+	console.log(sessionStorage.getItem("memory"));
 	$('#answer').val(sessionStorage.getItem("memory"));
 	$('#add').removeAttr('disabled');
 	$('#subtract').removeAttr('disabled');
