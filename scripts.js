@@ -395,7 +395,7 @@ function add(){
 	console.log("store");
 
 	var place = $('#answer').val();
-	sessionStorage.setItem("first", place);
+	$('#answer').val();$('#answer').val();
 	first = sessionStorage.getItem("first");
 	}
 
@@ -628,7 +628,7 @@ function mc (){
 function mr (){
 	console.log(sessionStorage.getItem("memory"));
 	var value = $('#answer').val(sessionStorage.getItem("memory"));
-	var value2 = parseFloat(value);
+	var value2 = parseFloat(value.val());
 	var place = $('#answer').val();
 
 
