@@ -633,6 +633,7 @@ function mr (){
 
 
     if (place && place.toString().length < 6) {
+    	console.log("wtf");
     	$('#answer').val(place + value2);
 	}
 	else if (place.toString().length > 5) {
