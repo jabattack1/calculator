@@ -522,6 +522,7 @@ function equals(){
 	if(number != null && operator === '+') {
 	var place1 = $('#answer').val();
 		console.log(place1);
+		console.log("place1");
 	number = $('#answer').val(parseFloat(place1) + parseFloat(second));
 	first = null;
 	}
