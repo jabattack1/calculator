@@ -633,9 +633,11 @@ function mr (){
 
 
     if (place && place.toString().length < 6) {
+    	console.log("wtff");
     	$('#answer').val(place + value2);
 	}
 	else if (place.toString().length > 5) {
+		console.log("wtfff");
 		$('#one').disabled = true;
 	}
 
