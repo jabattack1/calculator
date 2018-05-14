@@ -628,16 +628,17 @@ function mc (){
 function mr (){
 	console.log(sessionStorage.getItem("memory"));
 	var value = $('#answer').val(sessionStorage.getItem("memory"));
+	var value2 = parseFloat(value);
 	var place = $('#answer').val();
 
 
     if (place && place.toString().length < 6) {
-    	$('#answer').val(place + value);
+    	$('#answer').val(place + value2);
 	}
 	else if (place.toString().length > 5) {
 		$('#one').disabled = true;
 	}
-	else {$('#answer').val(value);}
+	else {$('#answer').val(value2);}
 
 	$('#add').removeAttr('disabled');
 	$('#subtract').removeAttr('disabled');
