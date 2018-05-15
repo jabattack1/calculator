@@ -27,7 +27,7 @@ number = null;
 var operator = null;
 var after_operator = 1;
 var oppo = null;
-
+var place = null;
 
 var trick = "<input  onfocus='this.blur()' readonly='readonly' type='number' step='any' id='trick' maxlength='6' onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>";
 var e = "<p id='e'>E</p>";
@@ -586,14 +586,29 @@ function equals(){
 }
 
 function mplus (){
-	var place = $('#answer').val();
-	sessionStorage.setItem("memory", place);
-	sessionStorage.getItem("memory");
-	$('#answer').val(place);
-	$('#add').removeAttr('disabled');
-	$('#subtract').removeAttr('disabled');
-	$('#times').removeAttr('disabled');
-	$('#division').removeAttr('disabled');
+
+
+	if(place != null) {
+		console.log("is");
+		place = parseFloat(place) + parseFloat($('#answer').val());
+		sessionStorage.setItem("memory", place);
+		sessionStorage.getItem("memory");
+		$('#answer').val(place);
+		$('#add').removeAttr('disabled');
+		$('#subtract').removeAttr('disabled');
+		$('#times').removeAttr('disabled');
+		$('#division').removeAttr('disabled');
+		}
+
+	else{place = $('#answer').val();
+		sessionStorage.setItem("memory", place);
+		sessionStorage.getItem("memory");
+		$('#answer').val(place);
+		$('#add').removeAttr('disabled');
+		$('#subtract').removeAttr('disabled');
+		$('#times').removeAttr('disabled');
+		$('#division').removeAttr('disabled');
+		}
 }
 
 function mminus (){
