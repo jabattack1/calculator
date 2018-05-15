@@ -587,15 +587,15 @@ function equals(){
 
 function mplus (){
 
-
+	$('#textarea-wrapper').append(trick);
+	$('#trick').val($('#answer').val());
+	
 	if(place != null) {
 		console.log("is");
 		place = parseFloat(place) + parseFloat($('#answer').val());
 		sessionStorage.setItem("memory", place);
 		sessionStorage.getItem("memory");
-		$('#textarea-wrapper').append(trick);
-		$('#trick').val($(place);
-		$('#answer').val("");
+		$('#answer').val(place);
 		$('#add').removeAttr('disabled');
 		$('#subtract').removeAttr('disabled');
 		$('#times').removeAttr('disabled');
@@ -605,9 +605,7 @@ function mplus (){
 	else{place = $('#answer').val();
 		sessionStorage.setItem("memory", place);
 		sessionStorage.getItem("memory");
-		$('#textarea-wrapper').append(trick);
-		$('#trick').val($(place);
-		$('#answer').val("");
+		$('#answer').val(place);
 		$('#add').removeAttr('disabled');
 		$('#subtract').removeAttr('disabled');
 		$('#times').removeAttr('disabled');
