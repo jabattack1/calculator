@@ -587,9 +587,7 @@ function equals(){
 
 function mplus (){
 
-	$('#textarea-wrapper').append(trick);
-	$('#trick').val($('#answer').val());
-	
+
 	if(place != null) {
 		console.log("is");
 		place = parseFloat(place) + parseFloat($('#answer').val());
