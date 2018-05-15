@@ -28,6 +28,7 @@ var operator = null;
 var after_operator = 1;
 var oppo = null;
 var place = null;
+var placeMinus = null;
 
 var trick = "<input  onfocus='this.blur()' readonly='readonly' type='number' step='any' id='trick' maxlength='6' onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>";
 var e = "<p id='e'>E</p>";
@@ -612,22 +613,22 @@ function mplus (){
 }
 
 function mminus (){
-		if(place != null) {
+		if(placeMinus != null) {
 		console.log("is");
-		place = parseFloat(place) - parseFloat($('#answer').val());
-		sessionStorage.setItem("memory", place);
+		placeMinus = parseFloat(place) - parseFloat($('#answer').val());
+		sessionStorage.setItem("memory", placeMinus);
 		sessionStorage.getItem("memory");
-		$('#answer').val(place);
+		$('#answer').val(placeMinus);
 		$('#add').removeAttr('disabled');
 		$('#subtract').removeAttr('disabled');
 		$('#times').removeAttr('disabled');
 		$('#division').removeAttr('disabled');
 		}
 
-	else{place = $('#answer').val();
-		sessionStorage.setItem("memory", place);
+	else{placeMinus = $('#answer').val();
+		sessionStorage.setItem("memory", placeMinus);
 		sessionStorage.getItem("memory");
-		$('#answer').val(place);
+		$('#answer').val(placeMinus);
 		$('#add').removeAttr('disabled');
 		$('#subtract').removeAttr('disabled');
 		$('#times').removeAttr('disabled');
