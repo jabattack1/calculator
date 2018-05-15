@@ -600,7 +600,7 @@ function mplus (){
 		$('#times').removeAttr('disabled');
 		$('#division').removeAttr('disabled');
 	}
-	else if(('#answer').val("")){
+	else if(('#answer').val(NaN)){
 		console.log("sohee");
 		place = $('#answer').val(0);
 		sessionStorage.setItem("memory", place);
