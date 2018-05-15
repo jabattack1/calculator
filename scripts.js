@@ -626,6 +626,7 @@ function mc (){
 	$('#times').removeAttr('disabled');
 	$('#division').removeAttr('disabled');
 
+	place = null;
 	second = null;
 	first = null;
 	$("#trick").remove();
