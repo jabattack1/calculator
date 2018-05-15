@@ -587,7 +587,7 @@ function equals(){
 }
 
 function mplus (){
-
+	var begin = ('#answer').val();
 
 	if(place != null) {
 		console.log("is");
@@ -600,7 +600,7 @@ function mplus (){
 		$('#times').removeAttr('disabled');
 		$('#division').removeAttr('disabled');
 	}
-	else if(('#answer').val(NaN)){
+	else if(begin === ""){
 		console.log("sohee");
 		place = $('#answer').val(0);
 		sessionStorage.setItem("memory", place);
