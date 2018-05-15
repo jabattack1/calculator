@@ -83,6 +83,8 @@ function one(){
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
 	$('#division').removeAttr('disabled');
+	$('#mplus').removeAttr('disabled');
+	$('#mminus').removeAttr('disabled');
 	// $('#equals').trigger('click');
 }
 
@@ -109,6 +111,8 @@ function two(){
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
 	$('#division').removeAttr('disabled');
+	$('#mplus').removeAttr('disabled');
+	$('#mminus').removeAttr('disabled');
 }
 
 function three(){
@@ -133,7 +137,9 @@ function three(){
 	$('#add').removeAttr('disabled');
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
-	$('#division').removeAttr('disabled');
+	$('#division').removeAttr('disabled');	
+	$('#mplus').removeAttr('disabled');
+	$('#mminus').removeAttr('disabled');
 }
 
 function four(){
@@ -159,6 +165,8 @@ function four(){
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
 	$('#division').removeAttr('disabled');
+	$('#mplus').removeAttr('disabled');
+	$('#mminus').removeAttr('disabled');
 }
 
 function five(){
@@ -184,6 +192,8 @@ function five(){
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
 	$('#division').removeAttr('disabled');
+	$('#mplus').removeAttr('disabled');
+	$('#mminus').removeAttr('disabled');
 }
 
 function six(){
@@ -209,6 +219,8 @@ function six(){
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
 	$('#division').removeAttr('disabled');
+	$('#mplus').removeAttr('disabled');
+	$('#mminus').removeAttr('disabled');
 }
 
 function seven(){
@@ -234,6 +246,8 @@ function seven(){
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
 	$('#division').removeAttr('disabled');
+	$('#mplus').removeAttr('disabled');
+	$('#mminus').removeAttr('disabled');
 }
 
 function eight(){
@@ -259,6 +273,8 @@ function eight(){
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
 	$('#division').removeAttr('disabled');
+	$('#mplus').removeAttr('disabled');
+	$('#mminus').removeAttr('disabled');
 }
 
 function nine(){
@@ -284,6 +300,8 @@ function nine(){
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
 	$('#division').removeAttr('disabled');
+	$('#mplus').removeAttr('disabled');
+	$('#mminus').removeAttr('disabled');
 }
 
 function zero(){
@@ -309,6 +327,8 @@ function zero(){
 	$('#subtract').removeAttr('disabled');
 	$('#times').removeAttr('disabled');
 	$('#division').removeAttr('disabled');
+	$('#mplus').removeAttr('disabled');
+	$('#mminus').removeAttr('disabled');
 }
 
 function period(){
@@ -599,17 +619,12 @@ function mplus (){
 		$('#subtract').removeAttr('disabled');
 		$('#times').removeAttr('disabled');
 		$('#division').removeAttr('disabled');
+		$('#mplus').removeAttr('disabled');
+		$('#mminus').removeAttr('disabled');
 	}
 	else if($('#answer').val().length === 0 ){
 		console.log("sohee");
-		place = $('#answer').val(0);
-		sessionStorage.setItem("memory", place);
-		sessionStorage.getItem("memory");
-		$('#answer').val(place);
-		$('#add').removeAttr('disabled');
-		$('#subtract').removeAttr('disabled');
-		$('#times').removeAttr('disabled');
-		$('#division').removeAttr('disabled');	
+		$('#mplus').attr('disabled','disabled');
 	}
 	else{place = $('#answer').val();
 		sessionStorage.setItem("memory", place);
@@ -619,6 +634,8 @@ function mplus (){
 		$('#subtract').removeAttr('disabled');
 		$('#times').removeAttr('disabled');
 		$('#division').removeAttr('disabled');
+		$('#mplus').removeAttr('disabled');
+		$('#mminus').removeAttr('disabled');
 	}
 }
 
