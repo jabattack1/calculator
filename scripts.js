@@ -41,6 +41,7 @@ $('#answer').maxLength=6;
 $( document ).ready(function() {
     $('#textarea-wrapper').append(trick);
 	$('#trick').val(0);
+	$('#answer').val(0);
 });
 if (isNaN() === true) {
 	console.log('NaN');
@@ -62,7 +63,7 @@ function one(){
 	$("#e").remove();
 	if (number) {
 		(console.log('yo'))
-		$('#answer').val("");
+		$('#answer').val(0);
 		$('#answer').val(value);
 		number = null;
 	}
@@ -90,7 +91,7 @@ function two(){
 	$("#trick").remove();
 	$("#e").remove();
 	if (number) {
-		$('#answer').val("");
+		$('#answer').val(0);
 		$('#answer').val(value);
 		number = null;
 	}
@@ -115,7 +116,7 @@ function three(){
 	$("#trick").remove();
 	$("#e").remove();
 	if (number) {
-		$('#answer').val("");
+		$('#answer').val(0);
 		$('#answer').val(value);
 		number = null;
 	}
@@ -140,7 +141,7 @@ function four(){
 	$("#trick").remove();
 	$("#e").remove();
 	if (number) {
-		$('#answer').val("");
+		$('#answer').val(0);
 		$('#answer').val(value);
 		number = null;
 	}
@@ -165,7 +166,7 @@ function five(){
 	$("#trick").remove();
 	$("#e").remove();
 	if (number) {
-		$('#answer').val("");
+		$('#answer').val(0);
 		$('#answer').val(value);
 		number = null;
 	}
@@ -190,7 +191,7 @@ function six(){
 	$("#trick").remove();
 	$("#e").remove();
 	if (number) {
-		$('#answer').val("");
+		$('#answer').val(0);
 		$('#answer').val(value);
 		number = null;
 	}
@@ -215,7 +216,7 @@ function seven(){
 	$("#trick").remove();
 	$("#e").remove();
 	if (number) {
-		$('#answer').val("");
+		$('#answer').val(0);
 		$('#answer').val(value);
 		number = null;
 	}
@@ -240,7 +241,7 @@ function eight(){
 	$("#trick").remove();
 	$("#e").remove();
 	if (number) {
-		$('#answer').val("");
+		$('#answer').val(0);
 		$('#answer').val(value);
 		number = null;
 	}
@@ -265,7 +266,7 @@ function nine(){
 	$("#trick").remove();
 	$("#e").remove();
 	if (number) {
-		$('#answer').val("");
+		$('#answer').val(0);
 		$('#answer').val(value);
 		number = null;
 	}
@@ -290,7 +291,7 @@ function zero(){
 	$("#trick").remove();
 	$("#e").remove();
 	if (number) {
-		$('#answer').val("");
+		$('#answer').val(0);
 		$('#answer').val(value);
 		number = null;
 	}
@@ -315,7 +316,7 @@ function period(){
 	$("#trick").remove();
 	$("#e").remove();
 	if (number) {
-		$('#answer').val("");
+		$('#answer').val(0);
 		$('#answer').val(value);
 		number = null;
 	}
@@ -343,7 +344,7 @@ function c(){
 	first = null;
 	$("#trick").remove();
 	$("#e").remove();
-	$('#answer').val("");
+	$('#answer').val(0);
 
 	if($('#trick').length == 0){
 		console.log("trick");
@@ -360,7 +361,7 @@ function ac(){
 	first = null;
 	$("#trick").remove();
 	$("#e").remove();
-	$('#answer').val("");
+	$('#answer').val(0);
 
 	if($('#trick').length == 0){
 		console.log("trick");
@@ -403,7 +404,7 @@ function add(){
 
 	operator = $('#add').val();
 	// $('#answer1').val("");
-	$('#answer').val("");
+	$('#answer').val(0);
 	$('#add').attr('disabled','disabled');
 }
 
@@ -436,14 +437,14 @@ function subtract(){
 
 	operator = $('#subtract').val();
 	// $('#answer1').val("");
-	$('#answer').val("");
+	$('#answer').val(0);
 	$('#subtract').attr('disabled','disabled');
 	// var place = $('#answer').val();
 	// sessionStorage.setItem("first", place);
 	// first = sessionStorage.getItem("first");
 	// operator = $('#subtract').val();
 	// if(second === null) {
-	// $('#answer').val("");}
+	// $('#answer').val(0);}
 	// else{
 	// var place2 = $('#answer').val();
 	// sessionStorage.setItem("second", place2);
@@ -481,7 +482,7 @@ function times(){
 
 	operator = $('#times').val();
 
-	$('#answer').val("");
+	$('#answer').val(0);
 	$('#times').attr('disabled','disabled');
 }
 
@@ -514,7 +515,7 @@ function division(){
 
 	operator = $('#division').val();
 	
-	$('#answer').val("");
+	$('#answer').val(0);
 	$('#division').attr('disabled','disabled');
 }
 
@@ -649,7 +650,7 @@ function mc (){
 	first = null;
 	$("#trick").remove();
 	$("#e").remove();
-	$('#answer').val("");
+	$('#answer').val(0);
 
 	if($('#trick').length == 0){
 		console.log("trick");
@@ -671,7 +672,7 @@ function mr (){
 	$("#e").remove();
 
 	if (number) {
-		$('#answer').val("");
+		$('#answer').val(0);
 		$('#answer').val(value);
 		number = null;
 	}
