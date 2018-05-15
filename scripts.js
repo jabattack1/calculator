@@ -644,6 +644,7 @@ function mc (){
 	$('#division').removeAttr('disabled');
 
 	place = null;
+	placeMinus = null;
 	second = null;
 	first = null;
 	$("#trick").remove();
