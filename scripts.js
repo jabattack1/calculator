@@ -612,11 +612,27 @@ function mplus (){
 }
 
 function mminus (){
-	sessionStorage.removeItem("memory");
-	$('#add').removeAttr('disabled');
-	$('#subtract').removeAttr('disabled');
-	$('#times').removeAttr('disabled');
-	$('#division').removeAttr('disabled');
+		if(place != null) {
+		console.log("is");
+		place = parseFloat(place) - parseFloat($('#answer').val());
+		sessionStorage.setItem("memory", place);
+		sessionStorage.getItem("memory");
+		$('#answer').val(place);
+		$('#add').removeAttr('disabled');
+		$('#subtract').removeAttr('disabled');
+		$('#times').removeAttr('disabled');
+		$('#division').removeAttr('disabled');
+		}
+
+	else{place = $('#answer').val();
+		sessionStorage.setItem("memory", place);
+		sessionStorage.getItem("memory");
+		$('#answer').val(place);
+		$('#add').removeAttr('disabled');
+		$('#subtract').removeAttr('disabled');
+		$('#times').removeAttr('disabled');
+		$('#division').removeAttr('disabled');
+		}
 }
 
 function mc (){
