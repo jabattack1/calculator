@@ -41,7 +41,6 @@ $('#answer').maxLength=6;
 $( document ).ready(function() {
     $('#textarea-wrapper').append(trick);
 	$('#trick').val(0);
-	$('#answer').val(0);
 });
 if (isNaN() === true) {
 	console.log('NaN');
@@ -63,7 +62,7 @@ function one(){
 	$("#e").remove();
 	if (number) {
 		(console.log('yo'))
-		$('#answer').val(0);
+		$('#answer').val("");
 		$('#answer').val(value);
 		number = null;
 	}
@@ -91,7 +90,7 @@ function two(){
 	$("#trick").remove();
 	$("#e").remove();
 	if (number) {
-		$('#answer').val(0);
+		$('#answer').val("");
 		$('#answer').val(value);
 		number = null;
 	}
@@ -116,7 +115,7 @@ function three(){
 	$("#trick").remove();
 	$("#e").remove();
 	if (number) {
-		$('#answer').val(0);
+		$('#answer').val("");
 		$('#answer').val(value);
 		number = null;
 	}
@@ -141,7 +140,7 @@ function four(){
 	$("#trick").remove();
 	$("#e").remove();
 	if (number) {
-		$('#answer').val(0);
+		$('#answer').val("");
 		$('#answer').val(value);
 		number = null;
 	}
@@ -166,7 +165,7 @@ function five(){
 	$("#trick").remove();
 	$("#e").remove();
 	if (number) {
-		$('#answer').val(0);
+		$('#answer').val("");
 		$('#answer').val(value);
 		number = null;
 	}
@@ -191,7 +190,7 @@ function six(){
 	$("#trick").remove();
 	$("#e").remove();
 	if (number) {
-		$('#answer').val(0);
+		$('#answer').val("");
 		$('#answer').val(value);
 		number = null;
 	}
@@ -216,7 +215,7 @@ function seven(){
 	$("#trick").remove();
 	$("#e").remove();
 	if (number) {
-		$('#answer').val(0);
+		$('#answer').val("");
 		$('#answer').val(value);
 		number = null;
 	}
@@ -241,7 +240,7 @@ function eight(){
 	$("#trick").remove();
 	$("#e").remove();
 	if (number) {
-		$('#answer').val(0);
+		$('#answer').val("");
 		$('#answer').val(value);
 		number = null;
 	}
@@ -266,7 +265,7 @@ function nine(){
 	$("#trick").remove();
 	$("#e").remove();
 	if (number) {
-		$('#answer').val(0);
+		$('#answer').val("");
 		$('#answer').val(value);
 		number = null;
 	}
@@ -291,7 +290,7 @@ function zero(){
 	$("#trick").remove();
 	$("#e").remove();
 	if (number) {
-		$('#answer').val(0);
+		$('#answer').val("");
 		$('#answer').val(value);
 		number = null;
 	}
@@ -316,7 +315,7 @@ function period(){
 	$("#trick").remove();
 	$("#e").remove();
 	if (number) {
-		$('#answer').val(0);
+		$('#answer').val("");
 		$('#answer').val(value);
 		number = null;
 	}
@@ -344,7 +343,7 @@ function c(){
 	first = null;
 	$("#trick").remove();
 	$("#e").remove();
-	$('#answer').val(0);
+	$('#answer').val("");
 
 	if($('#trick').length == 0){
 		console.log("trick");
@@ -361,7 +360,7 @@ function ac(){
 	first = null;
 	$("#trick").remove();
 	$("#e").remove();
-	$('#answer').val(0);
+	$('#answer').val("");
 
 	if($('#trick').length == 0){
 		console.log("trick");
@@ -404,7 +403,7 @@ function add(){
 
 	operator = $('#add').val();
 	// $('#answer1').val("");
-	$('#answer').val(0);
+	$('#answer').val("");
 	$('#add').attr('disabled','disabled');
 }
 
@@ -437,14 +436,14 @@ function subtract(){
 
 	operator = $('#subtract').val();
 	// $('#answer1').val("");
-	$('#answer').val(0);
+	$('#answer').val("");
 	$('#subtract').attr('disabled','disabled');
 	// var place = $('#answer').val();
 	// sessionStorage.setItem("first", place);
 	// first = sessionStorage.getItem("first");
 	// operator = $('#subtract').val();
 	// if(second === null) {
-	// $('#answer').val(0);}
+	// $('#answer').val("");}
 	// else{
 	// var place2 = $('#answer').val();
 	// sessionStorage.setItem("second", place2);
@@ -482,7 +481,7 @@ function times(){
 
 	operator = $('#times').val();
 
-	$('#answer').val(0);
+	$('#answer').val("");
 	$('#times').attr('disabled','disabled');
 }
 
@@ -515,7 +514,7 @@ function division(){
 
 	operator = $('#division').val();
 	
-	$('#answer').val(0);
+	$('#answer').val("");
 	$('#division').attr('disabled','disabled');
 }
 
@@ -600,8 +599,18 @@ function mplus (){
 		$('#subtract').removeAttr('disabled');
 		$('#times').removeAttr('disabled');
 		$('#division').removeAttr('disabled');
-		}
-
+	}
+	else if(('#answer').val("");){
+		console.log("sohee");
+		place = $('#answer').val(0);
+		sessionStorage.setItem("memory", place);
+		sessionStorage.getItem("memory");
+		$('#answer').val(place);
+		$('#add').removeAttr('disabled');
+		$('#subtract').removeAttr('disabled');
+		$('#times').removeAttr('disabled');
+		$('#division').removeAttr('disabled');	
+	}
 	else{place = $('#answer').val();
 		sessionStorage.setItem("memory", place);
 		sessionStorage.getItem("memory");
@@ -610,7 +619,7 @@ function mplus (){
 		$('#subtract').removeAttr('disabled');
 		$('#times').removeAttr('disabled');
 		$('#division').removeAttr('disabled');
-		}
+	}
 }
 
 function mminus (){
@@ -650,7 +659,7 @@ function mc (){
 	first = null;
 	$("#trick").remove();
 	$("#e").remove();
-	$('#answer').val(0);
+	$('#answer').val("");
 
 	if($('#trick').length == 0){
 		console.log("trick");
@@ -672,7 +681,7 @@ function mr (){
 	$("#e").remove();
 
 	if (number) {
-		$('#answer').val(0);
+		$('#answer').val("");
 		$('#answer').val(value);
 		number = null;
 	}
