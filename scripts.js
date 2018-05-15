@@ -615,7 +615,7 @@ function mplus (){
 function mminus (){
 		if(placeMinus != null) {
 		console.log("is");
-		placeMinus = parseFloat(place) - parseFloat($('#answer').val());
+		placeMinus = parseFloat(placeMinus) - parseFloat($('#answer').val());
 		sessionStorage.setItem("memory", placeMinus);
 		sessionStorage.getItem("memory");
 		$('#answer').val(placeMinus);
