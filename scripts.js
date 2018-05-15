@@ -640,7 +640,7 @@ function mplus (){
 }
 
 function mminus (){
-		if(placeMinus != null) {
+	if(placeMinus != null) {
 		console.log("is");
 		placeMinus = parseFloat($('#answer').val()) - parseFloat(placeMinus);
 		sessionStorage.setItem("memory", placeMinus);
@@ -650,7 +650,13 @@ function mminus (){
 		$('#subtract').removeAttr('disabled');
 		$('#times').removeAttr('disabled');
 		$('#division').removeAttr('disabled');
-		}
+		$('#mplus').removeAttr('disabled');
+		$('#mminus').removeAttr('disabled');
+	}
+	else if($('#answer').val().length === 0 ){
+		console.log("sohee");
+		$('#mminus').attr('disabled','disabled');
+	}
 
 	else{placeMinus = $('#answer').val();
 		sessionStorage.setItem("memory", placeMinus);
@@ -660,6 +666,8 @@ function mminus (){
 		$('#subtract').removeAttr('disabled');
 		$('#times').removeAttr('disabled');
 		$('#division').removeAttr('disabled');
+		$('#mplus').removeAttr('disabled');
+		$('#mminus').removeAttr('disabled');
 		}
 }
 
