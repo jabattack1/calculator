@@ -19,6 +19,12 @@ body {
   /*background-color:red;*/
 }
 
+#mainLogo{
+	position:absolute;
+	width:200px;
+	margin: 0;
+}
+
 
 #page-wrap {
   /*font-family: Georgia, serif;*/
