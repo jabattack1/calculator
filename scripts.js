@@ -593,7 +593,9 @@ function mplus (){
 		place = parseFloat(place) + parseFloat($('#answer').val());
 		sessionStorage.setItem("memory", place);
 		sessionStorage.getItem("memory");
-		$('#answer').val(place);
+		$('#textarea-wrapper').append(trick);
+		$('#trick').val($(place);
+		$('#answer').val("");
 		$('#add').removeAttr('disabled');
 		$('#subtract').removeAttr('disabled');
 		$('#times').removeAttr('disabled');
@@ -603,7 +605,9 @@ function mplus (){
 	else{place = $('#answer').val();
 		sessionStorage.setItem("memory", place);
 		sessionStorage.getItem("memory");
-		$('#answer').val(place);
+		$('#textarea-wrapper').append(trick);
+		$('#trick').val($(place);
+		$('#answer').val("");
 		$('#add').removeAttr('disabled');
 		$('#subtract').removeAttr('disabled');
 		$('#times').removeAttr('disabled');
