@@ -644,7 +644,7 @@ function mminus (){
 		console.log("is");
 		placeMinus = parseFloat($('#answer').val()) - parseFloat(placeMinus);
 		sessionStorage.setItem("memory", placeMinus);
-		sessionStorage.getItem("memory");
+		placeMinus = sessionStorage.getItem("memory");
 		$('#answer').val(placeMinus);
 		$('#add').removeAttr('disabled');
 		$('#subtract').removeAttr('disabled');
