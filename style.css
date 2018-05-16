@@ -1,22 +1,22 @@
 html{
 	background:url(./images/deskt.jpg) repeat-y center top;
 	background-color: black;
-	background-size: 1280px 760px;
+	background-size: 900px 600px;
 	/*width:100%;*/
 	z-index: 0;
 }
 
 body {
-  /*background: url() no-repeat;*/
+  	/*background: url() no-repeat;*/
   
-  /*background:url(./images/deskt.jpg) repeat-y center top;*/
-  background-size: 900px 600px;
-  background-repeat: no-repeat;
+  	/*background:url(./images/deskt.jpg) repeat-y center top;*/
+  	background-size: 900px 600px;
+  	background-repeat: no-repeat;
 	width:900px;
   	height: 600px;
   	margin: 0 auto;
-  position:relative;
-  /*background-color:red;*/
+  	position:relative;
+  	/*background-color:red;*/
 }
 
 #mainLogo{
