@@ -1,8 +1,8 @@
 html{
 	background:url(./images/deskt.jpg) repeat-y center top;
 	background-color: black;
-	background-size: 100%;
-	width:100%;
+	background-size: 1280px 760px;
+	/*width:100%;*/
 	z-index: 0;
 }
 
