@@ -570,7 +570,7 @@ button { cursor: pointer; cursor: hand; }
   
   color: #000000;
   margin-left: 0px;
-  margin-top: 13120px;
+  bottom:0;
   position: absolute;
   /*background-color: #000000;*/
   height: 15px; 
