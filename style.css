@@ -22,8 +22,8 @@ body {
 #mainLogo{
 	position:absolute;
 	width:270px;
-	margin-left:100px;
-	margin-top:170px;
+	margin-left:170px;
+	margin-top:210px;
 	z-index:10;
 }
 
