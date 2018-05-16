@@ -21,9 +21,10 @@ body {
 
 #mainLogo{
 	position:absolute;
-	width:350px;
-	margin-left:50px;
-	margin-top:150px;
+	width:270px;
+	margin-left:100px;
+	margin-top:170px;
+	z-index:10;
 }
 
 
