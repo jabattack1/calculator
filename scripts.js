@@ -1,5 +1,9 @@
 console.log('cool');
 
+$(window).load(function(){
+     $('.loader').fadeOut();
+});
+
 // var answer2 = "<input  onfocus=\"this.blur()\" readonly=\"readonly\" type='number' step=\"any\" id=\'answer\' maxlength=\"6\" onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>"
 
 // var answer = $('#answer').text()[0];
