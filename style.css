@@ -142,7 +142,11 @@ body {
 	background-size:600px 700px;
 	width:600px;
 	height:700px;
-	margin-left:0px;
+	margin-top:-12px;
+	/*margin-left:0px;*/
+	display: block;
+    margin-left:320px;
+
 }
 
 #textarea-wrapper {
@@ -152,8 +156,8 @@ body {
 	background-size:454px 121px;
 	width:454px;
 	height:121px;
-	margin-left:228px;
-	margin-top:65px;
+	/*margin-left:228px;*/
+	/*margin-top:65px;*/
 	border-radius: 8px;
 }
 
