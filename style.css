@@ -2,6 +2,8 @@ html{
 	background:url(./images/deskt.jpg) repeat-y center top;
 	background-color: black;
 	background-size: 700px 720px;
+	width:100%;
+  	height:100%;
 	/*width:100%;*/
 	z-index: 0;
 }
@@ -12,8 +14,8 @@ body {
   	/*background:url(./images/deskt.jpg) repeat-y center top;*/
   	background-size: 900px 720px;
   	background-repeat: no-repeat;
-	width:900px;
-  	height: 630px;
+	width:100%;
+  	height:100%;
   	margin: 0 auto;
   	position:relative;
   	/*background-color:red;*/
@@ -33,7 +35,7 @@ body {
   /*background-position: center;*/
   /*background-attachment:scroll;*/
   /*overflow-x: hidden;*/
-  	margin: 0 auto;
+  	margin: 50% 50%;
      /*width: 900px;*/
      /*margin: 0 auto;*/
 }
