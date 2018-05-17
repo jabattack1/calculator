@@ -35,6 +35,7 @@ body {
   	margin: 50% 50%;
   	width:900px;
   	height: 630px;
+  	position:relative;
      /*width: 900px;*/
      /*margin: 0 auto;*/
 }
@@ -136,16 +137,17 @@ body {
 }
 
 #bone {
-	position:absolute;
+	/*position:absolute;*/
 	background:url(./images/bone.png);
 	background-repeat:no-repeat;
 	background-size:600px 700px;
 	width:600px;
 	height:700px;
 	margin-top:-12px;
-	/*margin-left:0px;*/
+	margin-left:auto;
+	margin-right:auto;
 	display: block;
-    margin-left:320px;
+    /*margin-left:320px;*/
 
 }
 
