@@ -1,7 +1,16 @@
+html, body {
+    height: 100%;
+}
 
+html {
+    display: table;
+    margin: auto;
+}
 
 body {
-  	/*background: url() no-repeat;*/
+    display: table-cell;
+    vertical-align: middle;
+      	/*background: url() no-repeat;*/
   	background:url(./images/deskt.jpg) repeat-y center top;
 	background-color: black;
 	background-size: 700px 720px;
