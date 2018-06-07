@@ -39,10 +39,10 @@ body {
   /*background-attachment:scroll;*/
   /*overflow-x: hidden;*/
   /*position: fixed;*/
-  	margin: 50% 50%;
-  	width:900px;
-  	height: 630px;
-  	position:relative;
+  margin: 0 auto;
+    /*text-align: center;*/
+    display:table-cell;
+    vertical-align:middle;
      /*width: 900px;*/
      /*margin: 0 auto;*/
 }
