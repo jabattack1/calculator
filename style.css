@@ -11,9 +11,10 @@ body {
     display: table-cell;
     vertical-align: middle;
       	/*background: url() no-repeat;*/
-	background-color: black;
-  	/*background:url(./images/deskt.jpg) repeat-y center top;*/
+  	background:url(./images/deskt.jpg) repeat-y center;
   	background-repeat: no-repeat;
+  	background-size: 700px 720px;
+	background-color: black;
 	/*position: fixed;*/
 	/*left: 0px;*/
 	/*top: 0px;*/
@@ -36,8 +37,6 @@ body {
   /*background-attachment:scroll;*/
   /*overflow-x: hidden;*/
   /*position: fixed;*/
-  background-image:url(./images/deskt.jpg) repeat-y center top;
-  background-size: 700px 720px;
   margin: 0 auto;
     /*text-align: center;*/
     display:table-cell;
